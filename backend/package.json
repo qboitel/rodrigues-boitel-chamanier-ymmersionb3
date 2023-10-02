@@ -1,0 +1,16 @@
+{
+  "name": "projet-boutique-backend",
+  "version": "1.0.0",
+  "description": "API du projet boutique pour les Ymmersion du bachelor 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "RORO",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  }
+}

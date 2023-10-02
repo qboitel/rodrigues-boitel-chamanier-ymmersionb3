@@ -1,0 +1,1094 @@
+[
+    {
+        "id": 1,
+        "name": "PALACE CHAMPION SHOP T-SHIRT LONDON BLANC",
+        "images": [
+            "/t-shirt/1A.webp",
+            "/t-shirt/1B.webp"
+        ],
+        "brand": "palace",
+        "description": "Confectionné dans un tissu doux et confortable, le t-shirt palace/champion est un incontournable pour montre que tu représentes la cité londonienne.",
+        "size": [
+            "S",
+            "M",
+            "XL"
+        ],
+        "price": 65.00,
+        "category": "t-shirts",
+        "color": [
+            "blanc"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 2,
+        "name": "SHOCKING BEHAVIOUR PALACE T-SHIRT BLANC",
+        "images": [
+            "/t-shirt/2A.webp"
+        ],
+        "brand": "palace",
+        "description": "Confectionné dans un tissu doux et confortable, le t-shirt COMPORTEMENT CHOQUANT est un incontournable pour montre ta révolte contre cette société et ses comportements plus que douteux...",
+        "size": [
+            "XS",
+            "M"
+        ],
+        "price": 48.00,
+        "category": "t-shirts",
+        "color": [
+            "blanc",
+            "rose"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 3,
+        "name": "PALACE AVIREX T-SHIRT NOIR",
+        "images": [
+            "/t-shirt/3A.webp"
+        ],
+        "brand": "palace",
+        "description": "Confectionné dans un tissu doux et confortable, le t-shirt en collaboration avec la marque Avirex est un incontournable pour représenter tes origines du nord-est des États-Unis ! Brooklyn !",
+        "size": [
+            "M"
+        ],
+        "price": 50.00,
+        "category": "t-shirts",
+        "color": [
+            "blanc",
+            "noir"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 4,
+        "name": "PALACE CARHARTT WIP M/S T-SHIRT DE POCHE PALACE WAX",
+        "images": [
+            "/t-shirt/4A.webp",
+            "/t-shirt/4B.webp",
+            "/t-shirt/4C.webp",
+            "/t-shirt/4D.webp"
+        ],
+        "brand": "palace",
+        "description": "Confectionné dans un tissu doux et confortable, le t-shirt en colaboration avec la marque carhartt est un incontournable de la collection...",
+        "size": [
+            "XS",
+            "S",
+            "M"
+        ],
+        "price": 75.00,
+        "category": "t-shirts",
+        "color": [
+            "beige"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 5,
+        "name": "PALACE T-SHIRT TRÈS SEXY BLANC",
+        "images": [
+            "/t-shirt/5A.webp"
+        ],
+        "brand": "palace",
+        "description": "Confectionné dans un tissu doux et confortable, le t-shirt TRES SEXY permet de mettre en valeur votre amour pour le streetwear londonien...",
+        "size": [
+            "XS",
+            "S",
+            "M"
+        ],
+        "price": 50.00,
+        "category": "t-shirts",
+        "color": [
+            "blanc",
+            "bleu"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 6,
+        "name": "VETEMENT T-SHIRT NEVER LET YOU GO",
+        "images": [
+            "/t-shirt/6A.webp",
+            "/t-shirt/6B.webp"
+        ],
+        "brand": "vetements",
+        "description": "Noir, coton, imprimé à cœurs, slogan imprimé, encolure ras du cou, manches courtes, ourlet asymétrique. Lorsque vous passez commande, veillez à prendre en compte que les mensurations indiquées pour cet article unisexe correspondent à la taille homme.",
+        "size": [
+            "XS",
+            "S",
+            "M"
+        ],
+        "price": 652.00,
+        "category": "t-shirts",
+        "color": [
+            "noir"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 7,
+        "name": "VETEMENT T-SHIRT DONER KEBAD",
+        "images": [
+            "/t-shirt/7A.webp",
+            "/t-shirt/7B.webp",
+            "/t-shirt/7C.webp",
+            "/t-shirt/7D.webp"
+        ],
+        "brand": "vetements",
+        "description": "Noir, coton, encolure ras du cou, slogan imprimé sur l'avant, manches courtes, ourlet droit.",
+        "size": [
+            "XS",
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "price": 602.00,
+        "category": "t-shirts",
+        "color": [
+            "noir",
+            "rouge"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 8,
+        "name": "VETEMENT T-SHIRT ECSTASY",
+        "images": [
+            "/t-shirt/8A.webp",
+            "/t-shirt/8B.webp",
+            "/t-shirt/8C.webp",
+            "/t-shirt/8D.webp"
+        ],
+        "brand": "vetements",
+        "description": "Blanc, bleu clair, coton, tricot point jersey, imprimé graphique sur le devant, encolure ras du cou, manches courtes, ourlet droit.",
+        "size": [
+            "XS",
+            "L",
+            "XL"
+        ],
+        "price": 643.00,
+        "category": "t-shirts",
+        "color": [
+            "blanc",
+            "bleu"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 9,
+        "name": "VETEMENT T-SHIRT ECSTASY",
+        "images": [
+            "/t-shirt/9A.webp",
+            "/t-shirt/9B.webp",
+            "/t-shirt/9C.webp",
+            "/t-shirt/9D.webp"
+        ],
+        "brand": "vetements",
+        "description": "Noir, coton, imprimé graphique sur le devant, logo brodé à l'arrière, encolure ras du cou, épaules tombantes, manches courtes, ourlet droit. Lorsque vous passez commande, veillez à prendre en compte que les mensurations indiquées pour cet article unisexe correspondent à la taille homme.",
+        "size": [
+            "XS"
+        ],
+        "price": 614.00,
+        "category": "t-shirts",
+        "color": [
+            "noir",
+            "bleu"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 10,
+        "name": "VETEMENT T-SHIRT JAVA",
+        "images": [
+            "/t-shirt/10A.webp",
+            "/t-shirt/10B.webp",
+            "/t-shirt/10C.webp",
+            "/t-shirt/10D.webp"
+        ],
+        "brand": "vetements",
+        "description": "Noir, coton mélangé, imprimé graphique sur le devant, encolure ras du cou, manches courtes.",
+        "size": [
+            "XS",
+            "S"
+        ],
+        "price": 856.00,
+        "category": "t-shirts",
+        "color": [
+            "noir",
+            "rouge",
+            "bleu"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 11,
+        "name": "STUSSY T-SHIRT VIEUX TÉLÉPHONE TEINTÉ AUX PIGMENTS",
+        "images": [
+            "/t-shirt/11A.webp",
+            "/t-shirt/11B.webp"
+        ],
+        "brand": "stussy",
+        "description": "Le t-shirt Stussy est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+        "size": [
+            "XS",
+            "S",
+            "XL"
+        ],
+        "price": 48.00,
+        "category": "t-shirts",
+        "color": [
+            "noir",
+            "blanc"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 12,
+        "name": "STUSSY T-SHIRT PARESSEUX",
+        "images": [
+            "/t-shirt/12A.webp",
+            "/t-shirt/12B.webp",
+            "/t-shirt/12C.webp",
+            "/t-shirt/12D.webp",
+            "/t-shirt/12E.webp"
+        ],
+        "brand": "stussy",
+        "description": "Le t-shirt Stussy est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+        "size": [
+            "XS",
+            "S",
+            "XL"
+        ],
+        "price": 55.00,
+        "category": "t-shirts",
+        "color": [
+            "rose"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 13,
+        "name": "STUSSY T-SHIRT À POINTS CLASSIQUE",
+        "images": [
+            "/t-shirt/13A.webp",
+            "/t-shirt/13B.webp",
+            "/t-shirt/13C.webp",
+            "/t-shirt/13D.webp"
+        ],
+        "brand": "stussy",
+        "description": "Le t-shirt Stussy est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+        "size": [
+            "L"
+        ],
+        "price": 48.00,
+        "category": "t-shirts",
+        "color": [
+            "bleu"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 14,
+        "name": "STUSSY T-SHIRT STOCK DIZZY",
+        "images": [
+            "/t-shirt/14A.webp",
+            "/t-shirt/14B.webp"
+        ],
+        "brand": "stussy",
+        "description": "Le t-shirt Stussy est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+        "size": [
+            "L",
+            "XL"
+        ],
+        "price": 48.00,
+        "category": "t-shirts",
+        "color": [
+            "vert"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 15,
+        "name": "STUSSY T-SHIRT SALLE DE CLASSE",
+        "images": [
+            "/t-shirt/15A.webp",
+            "/t-shirt/15B.webp"
+        ],
+        "brand": "stussy",
+        "description": "Le t-shirt Stussy est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+        "size": [
+            "L",
+            "XL"
+        ],
+        "price": 48.00,
+        "category": "t-shirts",
+        "color": [
+            "vert"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 16,
+        "name": "PALACE WASHED TERRY 1/4 PLACKET HOOD MOJITO",
+        "images": [
+            "/pull/16A.webp",
+            "/pull/16B.webp",
+            "/pull/16C.webp",
+            "/pull/16D.webp"
+        ],
+        "brand": "palace",
+        "description": "Confectionné dans un tissu doux et confortable pour l'hiver, le pull est un incontournable pour montre que tu représentes la cité londonienne.",
+        "size": [
+            "S",
+            "XS",
+            "M"
+        ],
+        "price": 168.00,
+        "category": "pull",
+        "color": [
+            "vert"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 17,
+        "name": "PALACE PULL INTERNATIONALE BLANC",
+        "images": [
+            "/pull/17A.webp"
+        ],
+        "brand": "palace",
+        "description": "Confectionné dans un tissu doux et confortable pour l'hiver, le pull est un incontournable pour montre que tu représentes la cité londonienne.",
+        "size": [
+            "S",
+            "XS",
+            "M",
+            "L"
+        ],
+        "price": 138.00,
+        "category": "pull",
+        "color": [
+            "blanc",
+            "rouge"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 18,
+        "name": "PALACE PULL INTERNATIONALE NOIR",
+        "images": [
+            "/pull/18A.webp"
+        ],
+        "brand": "palace",
+        "description": "Confectionné dans un tissu doux et confortable pour l'hiver, le pull est un incontournable pour montre que tu représentes la cité londonienne.",
+        "size": [
+            "S",
+            "XS"
+        ],
+        "price": 135.00,
+        "category": "pull",
+        "color": [
+            "noir",
+            "blanc"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 19,
+        "name": "PALACE PULL A CAPUCHE UNISEXE CHASSEUR",
+        "images": [
+            "/pull/19A.webp",
+            "/pull/19B.webp",
+            "/pull/19C.webp"
+        ],
+        "brand": "palace",
+        "description": "Confectionné dans un tissu doux et confortable pour l'hiver, le pull est un incontournable pour montre que tu représentes la cité londonienne.",
+        "size": [
+            "M",
+            "L",
+            "XL"
+        ],
+        "price": 148.00,
+        "category": "pull",
+        "color": [
+            "vert"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 21,
+        "name": "PALACE PULL A CAPUCHON MARINE",
+        "images": [
+            "/pull/21A.webp",
+            "/pull/21B.webp"
+        ],
+        "brand": "palace",
+        "description": "Confectionné dans un tissu doux et confortable pour l'hiver, le pull est un incontournable pour montre que tu représentes la cité londonienne.",
+        "size": [
+            "XS",
+            "S",
+            "M"
+        ],
+        "price": 138.00,
+        "category": "pull",
+        "color": [
+            "bleu"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 22,
+        "name": "PALACE PULL CREW PASSEPOSE NOIR",
+        "images": [
+            "/pull/22A.webp",
+            "/pull/22B.webp",
+            "/pull/22C.webp"
+        ],
+        "brand": "palace",
+        "description": "Confectionné dans un tissu doux et confortable pour l'hiver, le pull est un incontournable pour montre que tu représentes la cité londonienne.",
+        "size": [
+            "XS",
+            "S"
+        ],
+        "price": 128.00,
+        "category": "pull",
+        "color": [
+            "noir"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 23,
+        "name": "PALACE PULL 3-P CREW PASSEPOSE ROSE",
+        "images": [
+            "/pull/23A.webp",
+            "/pull/23B.webp",
+            "/pull/23C.webp"
+        ],
+        "brand": "palace",
+        "description": "Confectionné dans un tissu doux et confortable pour l'hiver, le pull est un incontournable pour montre que tu représentes la cité londonienne.",
+        "size": [
+            "XS",
+            "S",
+            "L"
+        ],
+        "price": 138.00,
+        "category": "pull",
+        "color": [
+            "rose"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 24,
+        "name": "STUSSY PULL À CAPUCHE TEINTÉ PAR PIGMENT",
+        "images": [
+            "/pull/24A.webp",
+            "/pull/24B.webp"
+        ],
+        "brand": "stussy",
+        "description": "Le pull Stussy est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+        "size": [
+            "XS",
+            "S",
+            "L",
+            "XL"
+        ],
+        "price": 145.00,
+        "category": "pull",
+        "color": [
+            "blanc"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 25,
+        "name": "STUSSY PULL À CAPUCHE AVEC LOGO STOCK",
+        "images": [
+            "/pull/25A.webp",
+            "/pull/25B.webp",
+            "/pull/25C.webp",
+            "/pull/25D.webp"
+        ],
+        "brand": "stussy",
+        "description": "Le pull Stussy est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+        "size": [
+            "XS",
+            "S",
+            "L",
+            "XL"
+        ],
+        "price": 145.00,
+        "category": "pull",
+        "color": [
+            "noir"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 26,
+        "name": "STUSSY PULL BASIC CREW TEINTURE PIGMENTAIRE BLANCHE",
+        "images": [
+            "/pull/26A.webp",
+            "/pull/26B.webp"
+        ],
+        "brand": "stussy",
+        "description": "Le pull Stussy est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+        "size": [
+            "XS",
+            "S"
+        ],
+        "price": 135.00,
+        "category": "pull",
+        "color": [
+            "noir"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 27,
+        "name": "STUSSY PULL BASIC ROUGE",
+        "images": [
+            "/pull/27A.webp",
+            "/pull/27B.webp"
+        ],
+        "brand": "stussy",
+        "description": "Le pull Stussy est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+        "size": [
+            "XS",
+            "S",
+            "XL"
+        ],
+        "price": 135.00,
+        "category": "pull",
+        "color": [
+            "rouge"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 28,
+        "name": "STUSSY PULL BASIC LOGO ROSE",
+        "images": [
+            "/pull/28A.webp",
+            "/pull/28B.webp",
+            "/pull/28C.webp"
+        ],
+        "brand": "stussy",
+        "description": "Le pull Stussy est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+        "size": [
+            "XS",
+            "S",
+            "XL"
+        ],
+        "price": 130.00,
+        "category": "pull",
+        "color": [
+            "rose"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 29,
+        "name": "STUSSY PULL ETOILE VERT",
+        "images": [
+            "/pull/29A.webp",
+            "/pull/29B.webp"
+        ],
+        "brand": "stussy",
+        "description": "Le pull Stussy est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+        "size": [
+            "XS",
+            "S",
+            "XL"
+        ],
+        "price": 130.00,
+        "category": "pull",
+        "color": [
+            "vert",
+            "jaune"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 30,
+        "name": "STUSSY PULL ETOILE JAUNE",
+        "images": [
+            "/pull/30A.webp",
+            "/pull/30B.webp"
+        ],
+        "brand": "stussy",
+        "description": "Le pull Stussy est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+        "size": [
+            "XS",
+            "S",
+            "XL"
+        ],
+        "price": 130.00,
+        "category": "pull",
+        "color": [
+            "vert",
+            "jaune"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 31,
+        "name": "PALACE PANTALON CARGO GORE-TEX R-TEK OLIVE",
+        "images": [
+            "/pantalon/31A.webp",
+            "/pantalon/31B.webp",
+            "/pantalon/31C.webp",
+            "/pantalon/31D.webp"
+        ],
+        "brand": "palace",
+        "description": "Le pantalon palace est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+        "size": [
+            "XS",
+            "S",
+            "XL"
+        ],
+        "price": 110.00,
+        "category": "pantalon",
+        "color": [
+            "vert"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 32,
+        "name": "PALACE PANTALON CARGO GORE-TEX R-TEK BLANC",
+        "images": [
+            "/pantalon/32A.webp",
+            "/pantalon/32B.webp",
+            "/pantalon/32C.webp",
+            "/pantalon/32D.webp"
+        ],
+        "brand": "palace",
+        "description": "Le pantalon palace est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+        "size": [
+            "XS",
+            "S",
+            "XL"
+        ],
+        "price": 110.00,
+        "category": "pantalon",
+        "color": [
+            "blanc"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 33,
+        "name": "PALACE PANTALON CARGO GORE-TEX R-TEK NOIR",
+        "images": [
+            "/pantalon/33A.webp",
+            "/pantalon/33B.webp",
+            "/pantalon/33C.webp",
+            "/pantalon/33D.webp"
+        ],
+        "brand": "palace",
+        "description": "Le pantalon palace est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+        "size": [
+            "XS",
+            "S",
+            "XL"
+        ],
+        "price": 110.00,
+        "category": "pantalon",
+        "color": [
+            "noir"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 34,
+        "name": "PALACE PANTALON BOSSY JEAN STONE",
+        "images": [
+            "/pantalon/34A.webp",
+            "/pantalon/34B.webp",
+            "/pantalon/34C.webp",
+            "/pantalon/34D.webp"
+        ],
+        "brand": "palace",
+        "description": "Le pantalon palace est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+        "size": [
+            "XS",
+            "S",
+            "XL"
+        ],
+        "price": 125.00,
+        "category": "pantalon",
+        "color": [
+            "jean"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 35,
+        "name": "PALACE PANTALON BAGGIES JEAN STONE WASH",
+        "images": [
+            "/pantalon/35A.webp",
+            "/pantalon/35B.webp",
+            "/pantalon/35C.webp",
+            "/pantalon/35D.webp"
+        ],
+        "brand": "palace",
+        "description": "Le pantalon palace est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+        "size": [
+            "XS",
+            "S",
+            "XL"
+        ],
+        "price": 169.00,
+        "category": "pantalon",
+        "color": [
+            "jean"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 36,
+        "name": "PALACE PANTALON BASIC JOGGING HUNTSMAN",
+        "images": [
+            "/pantalon/36A.webp",
+            "/pantalon/36B.webp",
+            "/pantalon/36C.webp"
+        ],
+        "brand": "palace",
+        "description": "Le pantalon palace est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+        "size": [
+            "XS",
+            "S",
+            "XL"
+        ],
+        "price": 169.00,
+        "category": "pantalon",
+        "color": [
+            "vert"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 37,
+        "name": "PALACE PANTALON BASIC JOGGING NOIR",
+        "images": [
+            "/pantalon/37A.webp",
+            "/pantalon/37B.webp",
+            "/pantalon/37C.webp"
+        ],
+        "brand": "palace",
+        "description": "Le pantalon palace est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+        "size": [
+            "XS",
+            "S",
+            "XL"
+        ],
+        "price": 148.00,
+        "category": "pantalon",
+        "color": [
+            "noir"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 38,
+        "name": "STUSSY PANTALON BASIC JEAN",
+        "images": [
+            "/pantalon/38A.webp",
+            "/pantalon/38B.webp",
+            "/pantalon/38C.webp",
+            "/pantalon/38D.webp"
+        ],
+        "brand": "stussy",
+        "description": "Le pantalon stussy est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+        "size": [
+            "XS",
+            "S",
+            "XL"
+        ],
+        "price": 185.00,
+        "category": "pantalon",
+        "color": [
+            "jean"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 39,
+        "name": "STUSSY PANTALON BASIC JEAN NOIR",
+        "images": [
+            "/pantalon/39A.webp",
+            "/pantalon/39B.webp",
+            "/pantalon/39C.webp",
+            "/pantalon/39D.webp"
+        ],
+        "brand": "stussy",
+        "description": "Le pantalon stussy est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+        "size": [
+            "XS",
+            "S",
+            "XL"
+        ],
+        "price": 185.00,
+        "category": "pantalon",
+        "color": [
+            "jean",
+            "noir"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 40,
+        "name": "STUSSY PANTALON BASIC JEAN BLANC",
+        "images": [
+            "/pantalon/40A.webp",
+            "/pantalon/40B.webp",
+            "/pantalon/40C.webp",
+            "/pantalon/40D.webp"
+        ],
+        "brand": "stussy",
+        "description": "Le pantalon stussy est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+        "size": [
+            "XS",
+            "S",
+            "XL"
+        ],
+        "price": 185.00,
+        "category": "pantalon",
+        "color": [
+            "jean",
+            "blanc"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 41,
+        "name": "PALACE GORE-TEX R-TEK CARGO SHORT NOIR",
+        "images": [
+            "/short/41A.webp",
+            "/short/41B.webp",
+            "/short/41C.webp",
+            "/short/41D.webp"
+        ],
+        "brand": "palace",
+        "description": "Le short palace est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+        "size": [
+            "XS",
+            "S",
+            "XL"
+        ],
+        "price": 238.00,
+        "category": "short",
+        "color": [
+            "noir"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 42,
+        "name": "PALACE GORE-TEX R-TEK CARGO SHORT BLANC",
+        "images": [
+            "/short/42A.webp",
+            "/short/42B.webp",
+            "/short/42C.webp",
+            "/short/42D.webp"
+        ],
+        "brand": "palace",
+        "description": "Le short palace est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+        "size": [
+            "XS",
+            "S",
+            "XL"
+        ],
+        "price": 238.00,
+        "category": "short",
+        "color": [
+            "blanc"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 43,
+        "name": "STUSSY SHORT DE BAINS BASIC NOIR",
+        "images": [
+            "/short/43A.webp",
+            "/short/43B.webp",
+            "/short/43C.webp",
+            "/short/43D.webp"
+        ],
+        "brand": "stussy",
+        "description": "Le short stussy est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+        "size": [
+            "XS",
+            "S",
+            "XL"
+        ],
+        "price": 80.00,
+        "category": "short",
+        "color": [
+            "noir"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 44,
+        "name": "STUSSY SHORT DE BAINS BASIC BLEU",
+        "images": [
+            "/short/44A.webp",
+            "/short/44B.webp",
+            "/short/44C.webp",
+            "/short/44D.webp"
+        ],
+        "brand": "stussy",
+        "description": "Le short stussy est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+        "size": [
+            "XS",
+            "S",
+            "XL"
+        ],
+        "price": 80.00,
+        "category": "short",
+        "color": [
+            "bleu"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 45,
+        "name": "STUSSY SHORT DE BAINS BASIC VERT",
+        "images": [
+            "/short/45A.webp",
+            "/short/45B.webp",
+            "/short/45C.webp",
+            "/short/45D.webp"
+        ],
+        "brand": "stussy",
+        "description": "Le short stussy est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+        "size": [
+            "XS",
+            "S",
+            "XL"
+        ],
+        "price": 80.00,
+        "category": "short",
+        "color": [
+            "vert"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 46,
+        "name": "PALACE VESTE RIPSTOP PUFFA NOIR",
+        "images": [
+            "/veste/46A.webp",
+            "/veste/46B.webp",
+            "/veste/46C.webp",
+            "/veste/46D.webp"
+        ],
+        "brand": "palace",
+        "description": "La veste palace est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+        "size": [
+            "XS",
+            "S",
+            "XL"
+        ],
+        "price": 386.00,
+        "category": "veste",
+        "color": [
+            "noir"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 47,
+        "name": "PALACE VESTE GORE-TEX R-TEK NOIR",
+        "images": [
+            "/veste/47A.webp",
+            "/veste/47B.webp",
+            "/veste/47C.webp",
+            "/veste/47D.webp"
+        ],
+        "brand": "palace",
+        "description": "La veste palace est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+        "size": [
+            "XS",
+            "S",
+            "XL"
+        ],
+        "price": 528.00,
+        "category": "veste",
+        "color": [
+            "noir"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 48,
+        "name": "PALACE VESTE GORE-TEX R-TEK VERT",
+        "images": [
+            "/veste/48A.webp",
+            "/veste/48B.webp",
+            "/veste/48C.webp",
+            "/veste/48D.webp"
+        ],
+        "brand": "palace",
+        "description": "La veste palace est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+        "size": [
+            "XS",
+            "S",
+            "XL"
+        ],
+        "price": 528.00,
+        "category": "veste",
+        "color": [
+            "vert"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 49,
+        "name": "PALACE VESTE BASIC BLANC",
+        "images": [
+            "/veste/49A.webp",
+            "/veste/49B.webp",
+            "/veste/49C.webp",
+            "/veste/49D.webp"
+        ],
+        "brand": "palace",
+        "description": "La veste palace est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+        "size": [
+            "XS",
+            "S",
+            "XL"
+        ],
+        "price": 218.00,
+        "category": "veste",
+        "color": [
+            "blanc"
+        ],
+        "reduction": 0
+    },
+    {
+        "id": 50,
+        "name": "STUSSY VESTE GORE-TEX BLANCHE",
+        "images": [
+            "/veste/50A.webp",
+            "/veste/50B.webp",
+            "/veste/50C.webp",
+            "/veste/50D.webp"
+        ],
+        "brand": "stussy",
+        "description": "La veste stussy est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+        "size": [
+            "XS",
+            "S",
+            "XL"
+        ],
+        "price": 550.00,
+        "category": "veste",
+        "color": [
+            "blanc"
+        ],
+        "reduction": 0
+    }
+]
