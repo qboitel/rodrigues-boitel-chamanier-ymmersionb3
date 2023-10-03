@@ -1,4 +1,19 @@
 const { readFile } = require('fs')
+const { Product } = require('./../modeles/product')
+const multer = require('multer')
+
+const storage = multer.diskStorage({
+    destination: function (req, file, cb) {
+        cb(null, (__dirname + '/../../asset/images/' + req.body.cat))
+    },
+    filename: function (req, file, cb) {
+        console.log('icicicicicici ==> ', file);
+        cb(null, 'test' + '.' + file.originalname.split('.')[1])
+    }
+})
+
+const upload = multer({ storage: storage })
+
 
 const dataFile = __dirname + "/../../datas/data_products.json"
 
@@ -61,14 +76,19 @@ function getProdutcsBySearch(req, res) {
 function getProdutsByFilter(req, res) {
 
 }
-
 function addProduct(req, res) {
-
+    console.log('addProduct');
+    console.log(req.body);
+    console.log(req.file);
+    console.log(req.files);
+    res.send('okokoko')
 }
 
 module.exports = {
     getAllProducts,
     getProductsByID,
     getProductsByCategory,
-    getProdutcsBySearch
+    getProdutcsBySearch,
+    addProduct,
+    upload
 }

@@ -8,8 +8,12 @@ const app = express()
 
 app.use(cors({ origin: '*' }))
 app.use(express.json())
-app.use(express.urlencoded({ extended: true }))
+app.use(express.urlencoded({ extended: false }))
+
+app.use('/asset', express.static(__dirname + '/asset/images'));
 
 require('./src/routes/products')(app)
+require('./src/routes/address')(app)
+
 
 app.listen(PORT, () => console.log(`Serveur en cours d'écoute sur le port ${PORT}`))

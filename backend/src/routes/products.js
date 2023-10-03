@@ -13,10 +13,8 @@ module.exports = app => {
     router.get('/categorie/:cat', Products.getProductsByCategory);
     // Route pour effectuer une recherche d'un article
     router.get('/search', Products.getProdutcsBySearch)
-    // Route pour récupere des données via un systeme de filtre
-    //router.get('/list', XXXXX)
     // Route pour ajouter des produits à la boutique
-    //router.post('/', XXXXX)
+    router.post('/add', Products.addProduct, Products.upload.array('pics'))
     // Racine de la route pour la partie produit
     app.use('/api/products', router);
 } 
