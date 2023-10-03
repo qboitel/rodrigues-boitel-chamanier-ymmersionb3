@@ -21,7 +21,7 @@ function getAllProducts(req, res) {
     console.log("getAllProducts");
     readFile(dataFile, 'utf-8', (err, data) => {
         if (err) {
-            res.status(400).json({ pth: dataFile, code: 404, message: "Oupss une erreur s'est produite lors de la lecture des donées..." })
+            res.status(400).json({ pth: dataFile, code: 404, message: "Oupss une erreur s'est produite lors de la lecture des données..." })
         }
         res.json(JSON.parse(data))
     })
@@ -35,7 +35,7 @@ function getProductsByID(req, res) {
     }
     readFile(dataFile, 'utf-8', (err, data) => {
         if (err) {
-            res.status(400).json({ code: 404, message: "Oupss une erreur s'est produite lors de la lecture des donées..." })
+            res.status(400).json({ code: 404, message: "Oupss une erreur s'est produite lors de la lecture des données..." })
         }
         data = JSON.parse(data).find(element => element.id === parseInt(idProduct))
         !data ? res.status(404).json({ code: 404, message: "Oupss reference produit introuvable" }) : res.json(data)
@@ -51,7 +51,7 @@ function getProductsByCategory(req, res) {
 
     readFile(dataFile, 'utf-8', (err, data) => {
         if (err) {
-            res.status(400).json({ code: 404, message: "Oupss une erreur s'est produite lors de la lecture des donées..." })
+            res.status(400).json({ code: 404, message: "Oupss une erreur s'est produite lors de la lecture des données..." })
         }
         data = JSON.parse(data).filter(element => element.category === categoryName)
         !data ? res.status(404).json({ code: 404, message: "Oupss categorie produit introuvable" }) : res.json(data)
@@ -66,7 +66,7 @@ function getProdutcsBySearch(req, res) {
     }
     readFile(dataFile, 'utf-8', (err, data) => {
         if (err) {
-            res.status(400).json({ code: 404, message: "Oupss une erreur s'est produite lors de la lecture des donées..." })
+            res.status(400).json({ code: 404, message: "Oupss une erreur s'est produite lors de la lecture des données..." })
         }
         data = JSON.parse(data).filter(element => element.name.toLowerCase().includes(dataSearch.toLowerCase()))
         !data ? res.status(404).json({ code: 404, message: "Oupss pas de produits correspondants" }) : res.json(data)

@@ -15,8 +15,15 @@
         ],
         "price": 65.00,
         "category": "t-shirts",
-        "color": [
-            "blanc"
+        "colors": [
+            {
+                "name": "blanc",
+                "bgClass": "bg-white"
+            },
+            {
+                "name": "noir",
+                "bgClass": "bg-black"
+            }
         ],
         "reduction": 0
     },
@@ -34,9 +41,15 @@
         ],
         "price": 48.00,
         "category": "t-shirts",
-        "color": [
-            "blanc",
-            "rose"
+        "colors": [
+            {
+                "name": "blanc",
+                "bgClass": "bg-white"
+            },
+            {
+                "name": "rose",
+                "bgClass": "bg-pink-500"
+            }
         ],
         "reduction": 0
     },
@@ -53,9 +66,15 @@
         ],
         "price": 50.00,
         "category": "t-shirts",
-        "color": [
-            "blanc",
-            "noir"
+        "colors": [
+            {
+                "name": "blanc",
+                "bgClass": "bg-white"
+            },
+            {
+                "name": "noir",
+                "bgClass": "bg-black"
+            }
         ],
         "reduction": 0
     },
@@ -77,8 +96,11 @@
         ],
         "price": 75.00,
         "category": "t-shirts",
-        "color": [
-            "beige"
+        "colors": [
+            {
+                "name": "bleu",
+                "bgClass": "bg-blue-500"
+            }
         ],
         "reduction": 0
     },
@@ -97,9 +119,15 @@
         ],
         "price": 50.00,
         "category": "t-shirts",
-        "color": [
-            "blanc",
-            "bleu"
+        "colors": [
+            {
+                "name": "blanc",
+                "bgClass": "bg-white"
+            },
+            {
+                "name": "bleu",
+                "bgClass": "bg-blue-500"
+            }
         ],
         "reduction": 0
     },
@@ -119,8 +147,11 @@
         ],
         "price": 652.00,
         "category": "t-shirts",
-        "color": [
-            "noir"
+        "colors": [
+            {
+                "name": "noir",
+                "bgClass": "bg-black"
+            }
         ],
         "reduction": 0
     },
@@ -144,9 +175,15 @@
         ],
         "price": 602.00,
         "category": "t-shirts",
-        "color": [
-            "noir",
-            "rouge"
+        "colors": [
+            {
+                "name": "blanc",
+                "bgClass": "bg-white"
+            },
+            {
+                "name": "rouge",
+                "bgClass": "bg-red-500"
+            }
         ],
         "reduction": 0
     },
@@ -168,9 +205,15 @@
         ],
         "price": 643.00,
         "category": "t-shirts",
-        "color": [
-            "blanc",
-            "bleu"
+        "colors": [
+            {
+                "name": "blanc",
+                "bgClass": "bg-white"
+            },
+            {
+                "name": "bleu",
+                "bgClass": "bg-blue-500"
+            }
         ],
         "reduction": 0
     },
@@ -190,9 +233,15 @@
         ],
         "price": 614.00,
         "category": "t-shirts",
-        "color": [
-            "noir",
-            "bleu"
+        "colors": [
+            {
+                "name": "bleu",
+                "bgClass": "bg-blue-500"
+            },
+            {
+                "name": "noir",
+                "bgClass": "bg-black"
+            }
         ],
         "reduction": 0
     },
@@ -213,10 +262,23 @@
         ],
         "price": 856.00,
         "category": "t-shirts",
-        "color": [
-            "noir",
-            "rouge",
-            "bleu"
+        "colors": [
+            {
+                "name": "blanc",
+                "bgClass": "bg-white"
+            },
+            {
+                "name": "noir",
+                "bgClass": "bg-black"
+            },
+            {
+                "name": "rouge",
+                "bgClass": "bg-red-500"
+            },
+            {
+                "name": "rose",
+                "bgClass": "bg-pink-500"
+            }
         ],
         "reduction": 0
     },
@@ -236,9 +298,15 @@
         ],
         "price": 48.00,
         "category": "t-shirts",
-        "color": [
-            "noir",
-            "blanc"
+        "colors": [
+            {
+                "name": "blanc",
+                "bgClass": "bg-white" 
+            },
+            {
+                "name": "noir",
+                "bgClass": "bg-black"
+            }
         ],
         "reduction": 0
     },
@@ -261,8 +329,11 @@
         ],
         "price": 55.00,
         "category": "t-shirts",
-        "color": [
-            "rose"
+        "colors": [
+            {
+                "name": "rose",
+                "bgClass": "bg-pink-500"
+            }
         ],
         "reduction": 0
     },
@@ -282,8 +353,11 @@
         ],
         "price": 48.00,
         "category": "t-shirts",
-        "color": [
-            "bleu"
+        "colors": [
+            {
+                "name": "bleu",
+                "bgClass": "bg-blue-500"
+            }
         ],
         "reduction": 0
     },
@@ -302,8 +376,11 @@
         ],
         "price": 48.00,
         "category": "t-shirts",
-        "color": [
-            "vert"
+        "colors": [
+            {
+                "name": "vert",
+                "bgClass": "bg-green-500"
+            }
         ],
         "reduction": 0
     },
@@ -322,8 +399,11 @@
         ],
         "price": 48.00,
         "category": "t-shirts",
-        "color": [
-            "vert"
+        "colors": [
+            {
+                "name": "vert",
+                "bgClass": "bg-green-500"
+            }
         ],
         "reduction": 0
     },
@@ -345,8 +425,11 @@
         ],
         "price": 168.00,
         "category": "pull",
-        "color": [
-            "vert"
+        "colors": [
+            {
+                "name": "vert",
+                "bgClass": "bg-green-500"
+            }
         ],
         "reduction": 0
     },
@@ -366,9 +449,15 @@
         ],
         "price": 138.00,
         "category": "pull",
-        "color": [
-            "blanc",
-            "rouge"
+        "colors": [
+            {
+                "name": "blanc",
+                "bgClass": "bg-white"
+            },
+            {
+                "name": "rouge",
+                "bgClass": "bg-red-500"
+            }
         ],
         "reduction": 0
     },
@@ -386,9 +475,15 @@
         ],
         "price": 135.00,
         "category": "pull",
-        "color": [
-            "noir",
-            "blanc"
+        "colors": [
+            {
+                "name": "blanc",
+                "bgClass": "bg-white" 
+            },
+            {
+                "name": "noir",
+                "bgClass": "bg-black"
+            }
         ],
         "reduction": 0
     },
@@ -409,8 +504,11 @@
         ],
         "price": 148.00,
         "category": "pull",
-        "color": [
-            "vert"
+        "colors": [
+            {
+                "name": "vert",
+                "bgClass": "bg-green-500"
+            }
         ],
         "reduction": 0
     },
@@ -430,8 +528,11 @@
         ],
         "price": 138.00,
         "category": "pull",
-        "color": [
-            "bleu"
+        "colors": [
+            {
+                "name": "bleu",
+                "bgClass": "bg-blue-500"
+            }
         ],
         "reduction": 0
     },
@@ -451,8 +552,11 @@
         ],
         "price": 128.00,
         "category": "pull",
-        "color": [
-            "noir"
+        "colors": [
+            {
+                "name": "noir",
+                "bgClass": "bg-black"
+            }
         ],
         "reduction": 0
     },
@@ -473,8 +577,11 @@
         ],
         "price": 138.00,
         "category": "pull",
-        "color": [
-            "rose"
+        "colors": [
+            {
+                "name": "rose",
+                "bgClass": "bg-pink-500"
+            }
         ],
         "reduction": 0
     },
@@ -495,8 +602,11 @@
         ],
         "price": 145.00,
         "category": "pull",
-        "color": [
-            "blanc"
+        "colors": [
+            {
+                "name": "blanc",
+                "bgClass": "bg-white"
+            }
         ],
         "reduction": 0
     },
@@ -519,8 +629,11 @@
         ],
         "price": 145.00,
         "category": "pull",
-        "color": [
-            "noir"
+        "colors": [
+            {
+                "name": "noir",
+                "bgClass": "bg-black"
+            }
         ],
         "reduction": 0
     },
@@ -539,8 +652,11 @@
         ],
         "price": 135.00,
         "category": "pull",
-        "color": [
-            "noir"
+        "colors": [
+            {
+                "name": "noir",
+                "bgClass": "bg-black"
+            }
         ],
         "reduction": 0
     },
@@ -560,8 +676,11 @@
         ],
         "price": 135.00,
         "category": "pull",
-        "color": [
-            "rouge"
+        "colors": [
+            {
+                "name": "rouge",
+                "bgClass": "bg-red-500"
+            }
         ],
         "reduction": 0
     },
@@ -582,8 +701,11 @@
         ],
         "price": 130.00,
         "category": "pull",
-        "color": [
-            "rose"
+        "colors": [
+            {
+                "name": "rose",
+                "bgClass": "bg-pink-500"
+            }
         ],
         "reduction": 0
     },
@@ -603,9 +725,15 @@
         ],
         "price": 130.00,
         "category": "pull",
-        "color": [
-            "vert",
-            "jaune"
+        "colors": [
+            {
+                "name": "vert",
+                "bgClass": "bg-green-500"
+            },
+            {
+                "name": "jaune",
+                "bgClass": "bg-yellow-500"
+            }
         ],
         "reduction": 0
     },
@@ -625,9 +753,15 @@
         ],
         "price": 130.00,
         "category": "pull",
-        "color": [
-            "vert",
-            "jaune"
+        "colors": [
+            {
+                "name": "vert",
+                "bgClass": "bg-green-500"
+            },
+            {
+                "name": "jaune",
+                "bgClass": "bg-yellow-500"
+            }
         ],
         "reduction": 0
     },
@@ -649,8 +783,11 @@
         ],
         "price": 110.00,
         "category": "pantalon",
-        "color": [
-            "vert"
+        "colors": [
+            {
+                "name": "vert",
+                "bgClass": "bg-green-500"
+            }
         ],
         "reduction": 0
     },
@@ -672,8 +809,11 @@
         ],
         "price": 110.00,
         "category": "pantalon",
-        "color": [
-            "blanc"
+        "colors": [
+            {
+                "name": "blanc",
+                "bgClass": "bg-white"
+            }
         ],
         "reduction": 0
     },
@@ -695,8 +835,11 @@
         ],
         "price": 110.00,
         "category": "pantalon",
-        "color": [
-            "noir"
+        "colors": [
+            {
+                "name": "noir",
+                "bgClass": "bg-black"
+            }
         ],
         "reduction": 0
     },
@@ -718,8 +861,11 @@
         ],
         "price": 125.00,
         "category": "pantalon",
-        "color": [
-            "jean"
+        "colors": [
+            {
+                "name": "noir",
+                "bgClass": "bg-black"
+            }
         ],
         "reduction": 0
     },
@@ -741,8 +887,11 @@
         ],
         "price": 169.00,
         "category": "pantalon",
-        "color": [
-            "jean"
+        "colors": [
+            {
+                "name": "blanc",
+                "bgClass": "bg-white"
+            }
         ],
         "reduction": 0
     },
@@ -763,8 +912,11 @@
         ],
         "price": 169.00,
         "category": "pantalon",
-        "color": [
-            "vert"
+        "colors": [
+            {
+                "name": "vert",
+                "bgClass": "bg-green-500"
+            }
         ],
         "reduction": 0
     },
@@ -785,8 +937,11 @@
         ],
         "price": 148.00,
         "category": "pantalon",
-        "color": [
-            "noir"
+        "colors": [
+            {
+                "name": "noir",
+                "bgClass": "bg-black"
+            }
         ],
         "reduction": 0
     },
@@ -808,8 +963,11 @@
         ],
         "price": 185.00,
         "category": "pantalon",
-        "color": [
-            "jean"
+        "colors": [
+            {
+                "name": "noir",
+                "bgClass": "bg-black"
+            }
         ],
         "reduction": 0
     },
@@ -831,9 +989,15 @@
         ],
         "price": 185.00,
         "category": "pantalon",
-        "color": [
-            "jean",
-            "noir"
+        "colors": [
+            {
+                "name": "blanc",
+                "bgClass": "bg-white"
+            },
+            {
+                "name": "noir",
+                "bgClass": "bg-black"
+            }
         ],
         "reduction": 0
     },
@@ -855,9 +1019,15 @@
         ],
         "price": 185.00,
         "category": "pantalon",
-        "color": [
-            "jean",
-            "blanc"
+        "colors": [
+            {
+                "name": "blanc",
+                "bgClass": "bg-white"
+            },
+            {
+                "name": "noir",
+                "bgClass": "bg-black"
+            }
         ],
         "reduction": 0
     },
@@ -879,8 +1049,11 @@
         ],
         "price": 238.00,
         "category": "short",
-        "color": [
-            "noir"
+        "colors": [
+            {
+                "name": "noir",
+                "bgClass": "bg-black"
+            }
         ],
         "reduction": 0
     },
@@ -902,8 +1075,11 @@
         ],
         "price": 238.00,
         "category": "short",
-        "color": [
-            "blanc"
+        "colors": [
+            {
+                "name": "blanc",
+                "bgClass": "bg-white"
+            }
         ],
         "reduction": 0
     },
@@ -925,8 +1101,11 @@
         ],
         "price": 80.00,
         "category": "short",
-        "color": [
-            "noir"
+        "colors": [
+            {
+                "name": "noir",
+                "bgClass": "bg-black"
+            }
         ],
         "reduction": 0
     },
@@ -948,8 +1127,11 @@
         ],
         "price": 80.00,
         "category": "short",
-        "color": [
-            "bleu"
+        "colors": [
+            {
+                "name": "bleu",
+                "bgClass": "bg-blue-500"
+            }
         ],
         "reduction": 0
     },
@@ -971,8 +1153,11 @@
         ],
         "price": 80.00,
         "category": "short",
-        "color": [
-            "vert"
+        "colors": [
+            {
+                "name": "vert",
+                "bgClass": "bg-green-500"
+            }
         ],
         "reduction": 0
     },
@@ -994,8 +1179,11 @@
         ],
         "price": 386.00,
         "category": "veste",
-        "color": [
-            "noir"
+        "colors": [
+            {
+                "name": "noir",
+                "bgClass": "bg-black"
+            }
         ],
         "reduction": 0
     },
@@ -1017,8 +1205,11 @@
         ],
         "price": 528.00,
         "category": "veste",
-        "color": [
-            "noir"
+        "colors": [
+            {
+                "name": "noir",
+                "bgClass": "bg-black"
+            }
         ],
         "reduction": 0
     },
@@ -1040,8 +1231,11 @@
         ],
         "price": 528.00,
         "category": "veste",
-        "color": [
-            "vert"
+        "colors": [
+            {
+                "name": "vert",
+                "bgClass": "bg-green-500"
+            }
         ],
         "reduction": 0
     },
@@ -1063,8 +1257,11 @@
         ],
         "price": 218.00,
         "category": "veste",
-        "color": [
-            "blanc"
+        "colors": [
+            {
+                "name": "blanc",
+                "bgClass": "bg-white"
+            }
         ],
         "reduction": 0
     },
@@ -1086,8 +1283,11 @@
         ],
         "price": 550.00,
         "category": "veste",
-        "color": [
-            "blanc"
+        "colors": [
+            {
+                "name": "blanc",
+                "bgClass": "bg-white"
+            }
         ],
         "reduction": 0
     }

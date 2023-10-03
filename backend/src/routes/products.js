@@ -8,7 +8,7 @@ module.exports = app => {
     //Route pour récuperer l'ensemble des produits
     router.get('/', Products.getAllProducts);
     // Route pour recuperer un produit avec son id 
-    router.get('product/:id', Products.getProductsByID);
+    router.get('/product/:id', Products.getProductsByID);
     // Route pour récuperer les produits par categorie
     router.get('/categorie/:cat', Products.getProductsByCategory);
     // Route pour effectuer une recherche d'un article

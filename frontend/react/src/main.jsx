@@ -2,32 +2,45 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from "./routes/Root.jsx";
-import "./index.css";
 import ErrorPage from "./error-page.jsx";
 import TShirts from "./components/TShirts.jsx";
+import ProduitDetails from "./components/ProduitDetails.jsx";
+import Home from "./components/Home.jsx";
+import Pulls from "./components/Pulls.jsx";
+import Pantalons from "./components/Pantalons.jsx";
+import Short from "./components/Shorts.jsx";
+import Vestes from "./components/Vestes.jsx";
 
 const router = createBrowserRouter([
     { path: "/", element: <Root />, errorElement: ErrorPage,
         children: [
+            {
+                path: "",
+                element: <Home />,
+            },
+            {
+                path: "produits/:id",
+                element: <ProduitDetails />,
+            },
             {
                 path: "t-shirts",
                 element: <TShirts />,
             },
             {
                 path: "pulls",
-                element: <h1>Pulls</h1>,
+                element: <Pulls />,
             },
             {
                 path: "pantalons",
-                element: <h1>Pantalons</h1>,
+                element: <Pantalons />,
             },
             {
                 path: "shorts",
-                element: <h1>Shorts</h1>,
+                element: <Short />,
             },
             {
                 path: "vestes",
-                element: <h1>Vestes</h1>,
+                element: <Vestes />,
             },
             {
                 path: "panier",
