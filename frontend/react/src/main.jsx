@@ -12,6 +12,7 @@ import Short from "./components/Shorts.jsx";
 import Vestes from "./components/Vestes.jsx";
 import Panier from "./components/Panier.jsx";
 import Search from "./components/Search.jsx";
+import AddProduct from "./components/AddProduct.jsx";
 
 const router = createBrowserRouter([
     { path: "/", element: <Root />, errorElement: ErrorPage,
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
             {
                 path: "search",
                 element: <Search />,
+            },
+            {
+                path: "ajout-produit",
+                element: <AddProduct />,
             }
         ],
     },

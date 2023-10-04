@@ -8,14 +8,14 @@ const AllColor = ["rouge", "vert", "bleu", "noir", "blanc", "jaune", "rose"]
 export default function TShirts() {
     // get tshirt data from api
     const [tshirts, setTshirts] = useState([]);
-    const [filteredTshirts, setFilteredTshirts] = useState([]);
+    const [filteredProduits, setFilteredProduits] = useState([]);
 
     useEffect(() => {
         async function fetchData() {
             await axios.get('http://localhost:6969/api/products/categorie/t-shirts')
                 .then(response => {
                     setTshirts(response.data);
-                    setFilteredTshirts(response.data);
+                    setFilteredProduits(response.data);
                 })
                 .catch(error => {
                     console.log(error)
@@ -24,9 +24,16 @@ export default function TShirts() {
         fetchData();
     }, []);
 
-    // get form colors value
     const [colors, setColors] = useState([]);
-    const handleColorChange = () => {
+    const [sizes, setSizes] = useState([]);
+    const handleChange = () => {
+        const size = document.querySelectorAll('input[name="size"]:checked');
+        let sizes = [];
+        size.forEach((size) => {
+            sizes.push(size.id);
+        });
+        setSizes(sizes);
+
         const color = document.querySelectorAll('input[name="color"]:checked');
         let colors = [];
         color.forEach((color) => {
@@ -38,49 +45,32 @@ export default function TShirts() {
     // filter for each tshirt by color name
     useEffect(() => {
         // set tshirts to filter
-        function filterColors() {
+        function filter() {
+            let filteredProduits = null;
             // return only tshirts with colors selected inversed
-            if (colors.length === 0) return setFilteredTshirts(tshirts);
-            const filteredTshirts = tshirts.filter((tshirt) => {
-                return colors.some((color) => {
-                    return tshirt.colors.some((tshirtColor) => {
-                        return tshirtColor.name === color;
+            if (colors.length === 0 && sizes.length === 0) return setFilteredProduits(tshirts);
+            if (colors.length > 0) {
+                filteredProduits = tshirts.filter((produit) => {
+                    return colors.some((color) => {
+                        return produit.colors.some((produitColor) => {
+                            return produitColor.name === color;
+                        });
                     });
-                });
-            })
-            setFilteredTshirts(filteredTshirts);
-        }
-        filterColors();
-    }, [colors]);
-
-    // get form sizes value
-    const [sizes, setSizes] = useState([]);
-    const handleSizeChange = () => {
-        const size = document.querySelectorAll('input[name="size"]:checked');
-        let sizes = [];
-        size.forEach((size) => {
-            sizes.push(size.id);
-        });
-        setSizes(sizes);
-    }
-
-    // filter for each tshirt by color name
-    useEffect(() => {
-        // set tshirts to filter
-        function filterSizes() {
-            // return only tshirts with sizes selected
-            if (sizes.length === 0) return setFilteredTshirts(tshirts);
-            const filteredTshirts = tshirts.filter((tshirt) => {
-                return sizes.some((size) => {
-                    return tshirt.size.some((tshirtSize) => {
-                        return tshirtSize === size;
+                })
+            }
+            if (sizes.length > 0) {
+                filteredProduits = filteredProduits.filter((produit) => {
+                    return sizes.some((size) => {
+                        return produit.size.some((produitSize) => {
+                            return produitSize === size;
+                        });
                     });
-                });
-            })
-            setFilteredTshirts(filteredTshirts);
+                })
+            }
+            setFilteredProduits(filteredProduits);
         }
-        filterSizes();
-    }, [sizes]);
+        filter();
+    }, [colors, sizes]);
 
     return (
         <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8 py-4">
@@ -91,35 +81,35 @@ export default function TShirts() {
                     <div className="mt-4 pt-4 border-t border-gray-200">
                         <h3 className="sr-only">Categories</h3>
                         {/* color filters */}
-                        <div className="space-y-4">
+                        <form onChange={handleChange} className="space-y-4">
                             <div className="space-y-2">
                                 <h4 className="text-sm font-medium text-gray-900">Couleur</h4>
-                                <form onChange={handleColorChange} className="flex flex-col space-y-2">
+                                <div className="flex flex-col space-y-2">
                                     {AllColor.map((color) => (
                                         <div key={color} className="flex items-center">
                                             <input id={color} name="color" type="checkbox" className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded" />
                                             <label htmlFor={color} className="ml-3 text-sm text-gray-600 capitalize">{color}</label>
                                         </div>
                                     ))}
-                                </form>
+                                </div>
                             </div>
                             {/* size filters */}
                             <div className="space-y-2">
                                 <h4 className="text-sm font-medium text-gray-900">Taille</h4>
-                                <form onChange={handleSizeChange} className="flex flex-col space-y-2">
+                                <div className="flex flex-col space-y-2">
                                     {AllSize.map((size) => (
                                         <div key={size} className="flex items-center">
                                             <input id={size} name="size" type="checkbox" className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded" />
                                             <label htmlFor={size} className="ml-3 text-sm text-gray-600 uppercase">{size}</label>
                                         </div>
                                     ))}
-                                </form>
+                                </div>
                             </div>
-                        </div>
+                        </form>
                     </div>
                 </div>
                 <div className="grid grid-cols-2 gap-10 col-span-3">
-                    {filteredTshirts.map((tshirt) => (<Product product={tshirt} key={tshirt.id} />))}
+                    {filteredProduits.map((produit) => (<Product product={produit} key={produit.id} />))}
                 </div>
             </div>
         </div>
