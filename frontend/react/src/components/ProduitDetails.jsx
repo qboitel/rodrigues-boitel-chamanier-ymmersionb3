@@ -37,9 +37,28 @@ export default function ProduitDetails() {
         fetchData();
     }, [id]);
 
-    console.log(product)
-
     const [selectedColor, setSelectedColor] = useState(product.colors[0])
+    const [selectedSize, setSelectedSize] = useState(product.size[0])
+
+    // get panier from localstorage
+    let panier = (JSON.parse(localStorage.getItem("panier"))) || [];
+
+    // add product to panier with quantity and add only if item does not already exists in panier
+    // for product color and size, we only take the selected one
+    function addToPanier() {
+        let found = false;
+        for (let i = 0; i < panier.length; i++) {
+            if (panier[i].product.id === product.id && panier[i].selectedColor === selectedColor && panier[i].selectedSize === selectedSize) {
+                panier[i].quantity += 1;
+                found = true;
+                continue;
+            }
+        }
+        if (!found) {
+            panier.push({product: product, quantity: 1, selectedColor: selectedColor, selectedSize: selectedSize});
+        }
+        localStorage.setItem("panier", JSON.stringify(panier));
+    }
 
     return (
         <div className="bg-white">
@@ -63,7 +82,7 @@ export default function ProduitDetails() {
                                                 </span>
                                                 <span
                                                     className={classNames(
-                                                        selected ? 'ring-indigo-500' : 'ring-transparent',
+                                                        selected ? 'ring-red-500' : 'ring-transparent',
                                                         'pointer-events-none absolute inset-0 rounded-md ring-2 ring-offset-2'
                                                     )}
                                                     aria-hidden="true"
@@ -109,7 +128,7 @@ export default function ProduitDetails() {
                         <form className="mt-6">
                             {/* Colors */}
                             <div>
-                                <h3 className="text-sm text-gray-600">Color</h3>
+                                <h3 className="text-sm text-gray-600">Couleur</h3>
 
                                 <RadioGroup value={selectedColor} onChange={setSelectedColor} className="mt-2">
                                     <RadioGroup.Label className="sr-only">Choose a color</RadioGroup.Label>
@@ -143,12 +162,46 @@ export default function ProduitDetails() {
                                 </RadioGroup>
                             </div>
 
+                            {/* Size picker */}
+                            <div className="mt-8">
+                                <div className="flex items-center justify-between">
+                                    <h2 className="text-sm font-medium text-gray-900">Taille</h2>
+                                    <a href="#" className="text-sm font-medium text-indigo-600 hover:text-indigo-500">
+                                        Voir le guide des tailles
+                                    </a>
+                                </div>
+
+                                <RadioGroup value={selectedSize} onChange={setSelectedSize} className="mt-2">
+                                    <RadioGroup.Label className="sr-only">Choose a size</RadioGroup.Label>
+                                    <div className="grid grid-cols-3 gap-3 sm:grid-cols-6">
+                                        {product.size.map((size) => (
+                                            <RadioGroup.Option
+                                                key={size}
+                                                value={size}
+                                                className={({ active, checked }) =>
+                                                    classNames(
+                                                        active ? 'ring-2 ring-red-500 ring-offset-2' : '',
+                                                        checked
+                                                            ? 'border-transparent bg-red-600 text-white hover:bg-red-700'
+                                                            : 'border-gray-200 bg-white text-gray-900 hover:bg-gray-50',
+                                                        'flex items-center justify-center rounded-md border py-3 px-3 text-sm font-medium uppercase sm:flex-1 cursor-pointer focus:outline-none'
+                                                    )
+                                                }
+                                            >
+                                                <RadioGroup.Label as="span">{size}</RadioGroup.Label>
+                                            </RadioGroup.Option>
+                                        ))}
+                                    </div>
+                                </RadioGroup>
+                            </div>
+
                             <div className="mt-10 flex">
                                 <button
                                     type="submit"
-                                    className="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-indigo-600 px-8 py-3 text-base font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
+                                    onClick={addToPanier}
+                                    className="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-red-600 px-8 py-3 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
                                 >
-                                    Add to bag
+                                    Ajouter au panier
                                 </button>
 
                                 <button
