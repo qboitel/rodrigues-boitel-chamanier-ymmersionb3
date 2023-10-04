@@ -8,13 +8,13 @@ module.exports = app => {
     //Route pour récuperer l'ensemble des produits
     router.get('/', Products.getAllProducts);
     // Route pour recuperer un produit avec son id 
-    router.get('product/:id', Products.getProductsByID);
+    router.get('/product/:id', Products.getProductsByID);
     // Route pour récuperer les produits par categorie
     router.get('/categorie/:cat', Products.getProductsByCategory);
     // Route pour effectuer une recherche d'un article
     router.get('/search', Products.getProdutcsBySearch)
     // Route pour ajouter des produits à la boutique
-    router.post('/add', Products.addProduct, Products.upload.array('pics'))
+    router.post('/add', Products.upload.array('pics'), Products.addProduct)
     // Racine de la route pour la partie produit
     app.use('/api/products', router);
 } 
