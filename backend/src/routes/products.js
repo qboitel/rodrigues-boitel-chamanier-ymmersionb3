@@ -14,7 +14,7 @@ module.exports = app => {
     // Route pour effectuer une recherche d'un article
     router.get('/search', Products.getProdutcsBySearch)
     // Route pour ajouter des produits à la boutique
-    router.post('/add', Products.addProduct, Products.upload.array('pics'))
+    router.post('/add', Products.upload.array('pics'), Products.addProduct)
     // Racine de la route pour la partie produit
     app.use('/api/products', router);
 } 

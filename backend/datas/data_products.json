@@ -13,7 +13,7 @@
             "M",
             "XL"
         ],
-        "price": 65.00,
+        "price": 65,
         "category": "t-shirts",
         "colors": [
             {
@@ -39,7 +39,7 @@
             "XS",
             "M"
         ],
-        "price": 48.00,
+        "price": 48,
         "category": "t-shirts",
         "colors": [
             {
@@ -64,7 +64,7 @@
         "size": [
             "M"
         ],
-        "price": 50.00,
+        "price": 50,
         "category": "t-shirts",
         "colors": [
             {
@@ -94,7 +94,7 @@
             "S",
             "M"
         ],
-        "price": 75.00,
+        "price": 75,
         "category": "t-shirts",
         "colors": [
             {
@@ -117,7 +117,7 @@
             "S",
             "M"
         ],
-        "price": 50.00,
+        "price": 50,
         "category": "t-shirts",
         "colors": [
             {
@@ -145,7 +145,7 @@
             "S",
             "M"
         ],
-        "price": 652.00,
+        "price": 652,
         "category": "t-shirts",
         "colors": [
             {
@@ -173,7 +173,7 @@
             "L",
             "XL"
         ],
-        "price": 602.00,
+        "price": 602,
         "category": "t-shirts",
         "colors": [
             {
@@ -203,7 +203,7 @@
             "L",
             "XL"
         ],
-        "price": 643.00,
+        "price": 643,
         "category": "t-shirts",
         "colors": [
             {
@@ -231,7 +231,7 @@
         "size": [
             "XS"
         ],
-        "price": 614.00,
+        "price": 614,
         "category": "t-shirts",
         "colors": [
             {
@@ -260,7 +260,7 @@
             "XS",
             "S"
         ],
-        "price": 856.00,
+        "price": 856,
         "category": "t-shirts",
         "colors": [
             {
@@ -296,7 +296,7 @@
             "S",
             "XL"
         ],
-        "price": 48.00,
+        "price": 48,
         "category": "t-shirts",
         "colors": [
             {
@@ -327,7 +327,7 @@
             "S",
             "XL"
         ],
-        "price": 55.00,
+        "price": 55,
         "category": "t-shirts",
         "colors": [
             {
@@ -351,7 +351,7 @@
         "size": [
             "L"
         ],
-        "price": 48.00,
+        "price": 48,
         "category": "t-shirts",
         "colors": [
             {
@@ -374,7 +374,7 @@
             "L",
             "XL"
         ],
-        "price": 48.00,
+        "price": 48,
         "category": "t-shirts",
         "colors": [
             {
@@ -397,7 +397,7 @@
             "L",
             "XL"
         ],
-        "price": 48.00,
+        "price": 48,
         "category": "t-shirts",
         "colors": [
             {
@@ -423,7 +423,7 @@
             "XS",
             "M"
         ],
-        "price": 168.00,
+        "price": 168,
         "category": "pull",
         "colors": [
             {
@@ -447,7 +447,7 @@
             "M",
             "L"
         ],
-        "price": 138.00,
+        "price": 138,
         "category": "pull",
         "colors": [
             {
@@ -473,7 +473,7 @@
             "S",
             "XS"
         ],
-        "price": 135.00,
+        "price": 135,
         "category": "pull",
         "colors": [
             {
@@ -502,7 +502,7 @@
             "L",
             "XL"
         ],
-        "price": 148.00,
+        "price": 148,
         "category": "pull",
         "colors": [
             {
@@ -526,7 +526,7 @@
             "S",
             "M"
         ],
-        "price": 138.00,
+        "price": 138,
         "category": "pull",
         "colors": [
             {
@@ -550,7 +550,7 @@
             "XS",
             "S"
         ],
-        "price": 128.00,
+        "price": 128,
         "category": "pull",
         "colors": [
             {
@@ -575,7 +575,7 @@
             "S",
             "L"
         ],
-        "price": 138.00,
+        "price": 138,
         "category": "pull",
         "colors": [
             {
@@ -600,7 +600,7 @@
             "L",
             "XL"
         ],
-        "price": 145.00,
+        "price": 145,
         "category": "pull",
         "colors": [
             {
@@ -627,7 +627,7 @@
             "L",
             "XL"
         ],
-        "price": 145.00,
+        "price": 145,
         "category": "pull",
         "colors": [
             {
@@ -650,7 +650,7 @@
             "XS",
             "S"
         ],
-        "price": 135.00,
+        "price": 135,
         "category": "pull",
         "colors": [
             {
@@ -674,7 +674,7 @@
             "S",
             "XL"
         ],
-        "price": 135.00,
+        "price": 135,
         "category": "pull",
         "colors": [
             {
@@ -699,7 +699,7 @@
             "S",
             "XL"
         ],
-        "price": 130.00,
+        "price": 130,
         "category": "pull",
         "colors": [
             {
@@ -723,7 +723,7 @@
             "S",
             "XL"
         ],
-        "price": 130.00,
+        "price": 130,
         "category": "pull",
         "colors": [
             {
@@ -751,7 +751,7 @@
             "S",
             "XL"
         ],
-        "price": 130.00,
+        "price": 130,
         "category": "pull",
         "colors": [
             {
@@ -781,7 +781,7 @@
             "S",
             "XL"
         ],
-        "price": 110.00,
+        "price": 110,
         "category": "pantalon",
         "colors": [
             {
@@ -807,7 +807,7 @@
             "S",
             "XL"
         ],
-        "price": 110.00,
+        "price": 110,
         "category": "pantalon",
         "colors": [
             {
@@ -833,7 +833,7 @@
             "S",
             "XL"
         ],
-        "price": 110.00,
+        "price": 110,
         "category": "pantalon",
         "colors": [
             {
@@ -859,7 +859,7 @@
             "S",
             "XL"
         ],
-        "price": 125.00,
+        "price": 125,
         "category": "pantalon",
         "colors": [
             {
@@ -885,7 +885,7 @@
             "S",
             "XL"
         ],
-        "price": 169.00,
+        "price": 169,
         "category": "pantalon",
         "colors": [
             {
@@ -910,7 +910,7 @@
             "S",
             "XL"
         ],
-        "price": 169.00,
+        "price": 169,
         "category": "pantalon",
         "colors": [
             {
@@ -935,7 +935,7 @@
             "S",
             "XL"
         ],
-        "price": 148.00,
+        "price": 148,
         "category": "pantalon",
         "colors": [
             {
@@ -961,7 +961,7 @@
             "S",
             "XL"
         ],
-        "price": 185.00,
+        "price": 185,
         "category": "pantalon",
         "colors": [
             {
@@ -987,7 +987,7 @@
             "S",
             "XL"
         ],
-        "price": 185.00,
+        "price": 185,
         "category": "pantalon",
         "colors": [
             {
@@ -1017,7 +1017,7 @@
             "S",
             "XL"
         ],
-        "price": 185.00,
+        "price": 185,
         "category": "pantalon",
         "colors": [
             {
@@ -1047,7 +1047,7 @@
             "S",
             "XL"
         ],
-        "price": 238.00,
+        "price": 238,
         "category": "short",
         "colors": [
             {
@@ -1073,7 +1073,7 @@
             "S",
             "XL"
         ],
-        "price": 238.00,
+        "price": 238,
         "category": "short",
         "colors": [
             {
@@ -1099,7 +1099,7 @@
             "S",
             "XL"
         ],
-        "price": 80.00,
+        "price": 80,
         "category": "short",
         "colors": [
             {
@@ -1125,7 +1125,7 @@
             "S",
             "XL"
         ],
-        "price": 80.00,
+        "price": 80,
         "category": "short",
         "colors": [
             {
@@ -1151,7 +1151,7 @@
             "S",
             "XL"
         ],
-        "price": 80.00,
+        "price": 80,
         "category": "short",
         "colors": [
             {
@@ -1177,7 +1177,7 @@
             "S",
             "XL"
         ],
-        "price": 386.00,
+        "price": 386,
         "category": "veste",
         "colors": [
             {
@@ -1203,7 +1203,7 @@
             "S",
             "XL"
         ],
-        "price": 528.00,
+        "price": 528,
         "category": "veste",
         "colors": [
             {
@@ -1229,7 +1229,7 @@
             "S",
             "XL"
         ],
-        "price": 528.00,
+        "price": 528,
         "category": "veste",
         "colors": [
             {
@@ -1255,7 +1255,7 @@
             "S",
             "XL"
         ],
-        "price": 218.00,
+        "price": 218,
         "category": "veste",
         "colors": [
             {
@@ -1281,7 +1281,7 @@
             "S",
             "XL"
         ],
-        "price": 550.00,
+        "price": 550,
         "category": "veste",
         "colors": [
             {
