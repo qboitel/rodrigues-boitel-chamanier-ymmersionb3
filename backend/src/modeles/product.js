@@ -11,7 +11,7 @@ const Product = function (product) {
     this.reduction = product.reduction;
 }
 
-const AllSize = ["xs", "s", "m", "l", "xl", "xxl", "xxxl"]
+const AllSize = ["XS", "S", "M", "L", "XL", "XXL", "XXXL"]
 
 const AllCategories = ["veste", "short", "pantalon", "pull", "t-shirts", "test"]
 

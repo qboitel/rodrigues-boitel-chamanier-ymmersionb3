@@ -141,7 +141,7 @@ function addProduct(req, res) {
                 res.status(500).json({ code: 500, message: `Oupsss une erreur dans l'écriture du fichier` });
                 return;
             }
-            res.status(200);
+            res.status(200).json(newProduct);
         });
     });
 
