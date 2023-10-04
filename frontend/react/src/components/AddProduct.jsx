@@ -30,12 +30,12 @@ export default function AddProduct() {
                     <input type="number" className="mt-2 block w-full rounded-lg border-0 bg-white py-1.5 px-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-red-600 sm:text-sm sm:leading-6" name="reduction" id="reduction" placeholder="Réduction du produit" />
                 </div>
                 <div className="flex flex-col">
-                    <label htmlFor="image">Image du produit</label>
-                    <input type="file" className="mt-2 block w-full rounded-lg border-0 bg-white py-1.5 px-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-red-600 sm:text-sm sm:leading-6" id="pics" name="pics" multiple placeholder="Image du produit" />
-                </div>
-                <div className="flex flex-col">
                     <label htmlFor="name">Catégorie du produit</label>
                     <input type="text" className="mt-2 block w-full rounded-lg border-0 bg-white py-1.5 px-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-red-600 sm:text-sm sm:leading-6" name="category" id="category" placeholder="Catégorie du produit" />
+                </div>
+                <div className="flex flex-col">
+                    <label htmlFor="image">Image du produit</label>
+                    <input type="file" className="mt-2 block w-full rounded-lg border-0 bg-white py-1.5 px-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-red-600 sm:text-sm sm:leading-6" id="pics" name="pics" multiple placeholder="Image du produit" />
                 </div>
                 <div className="form-group">
                     <label htmlFor="size">Taille du produit</label>
