@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="http://localhost:8080/api/products/add" method="post" enctype="multipart/form-data" onchange="Up()">
+        <input type="text" name="name" id="" placeholder="name">
+        <input type="text" name="brand" id="" placeholder="brand">
+        <input type="text" name="description" id="" placeholder="description">
+        <input type="text" name="price" id="" placeholder="price">
+        <input type="text" name="category" id="" placeholder="category">
+        <input type="text" name="reduction" id="" placeholder="reduction">
+        <input type="file" name="pics" multiple>
+
+        <div>
+            <input type="checkbox" id="XS" name="size[]" value="xs" checked />
+            <label for="XS">XS</label>
+        </div>
+        <div>
+            <input type="checkbox" id="S" name="size[]" value="S" />
+            <label for="S">S</label>
+        </div>
+        <div>
+            <input type="checkbox" id="red" name="color[]" value="rouge" />
+            <label for="red">red</label>
+        </div>
+        <div>
+            <input type="checkbox" id="blue" name="color[]" value="bLue" />
+            <label for="blue">blue</label>
+        </div>
+        <div>
+            <input type="checkbox" id="black" name="color[]" value="noir" />
+            <label for="black">black</label>
+        </div>
+
+        <button type="submit">valider</button>
+    </form>
+
+    <script>
+        let SizeFilter = []
+        let ColorFilter = []
+        let Data = [{
+            "id": 45,
+            "name": "STUSSY SHORT DE BAINS BASIC VERT",
+            "images": [
+                "/short/45A.webp",
+                "/short/45B.webp",
+                "/short/45C.webp",
+                "/short/45D.webp"
+            ],
+            "brand": "stussy",
+            "description": "Le short stussy est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+            "size": [
+                "XS",
+                "S",
+                "XL"
+            ],
+            "price": 80,
+            "category": "short",
+            "colors": [
+                {
+                    "name": "vert",
+                    "bgClass": "bg-green-500"
+                }
+            ],
+            "reduction": 0
+        },
+        {
+            "id": 46,
+            "name": "PALACE VESTE RIPSTOP PUFFA NOIR",
+            "images": [
+                "/veste/46A.webp",
+                "/veste/46B.webp",
+                "/veste/46C.webp",
+                "/veste/46D.webp"
+            ],
+            "brand": "palace",
+            "description": "La veste palace est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+            "size": [
+                "XS",
+                "S",
+                "XL"
+            ],
+            "price": 386,
+            "category": "veste",
+            "colors": [
+                {
+                    "name": "noir",
+                    "bgClass": "bg-black"
+                }
+            ],
+            "reduction": 0
+        },
+        {
+            "id": 47,
+            "name": "PALACE VESTE GORE-TEX R-TEK NOIR",
+            "images": [
+                "/veste/47A.webp",
+                "/veste/47B.webp",
+                "/veste/47C.webp",
+                "/veste/47D.webp"
+            ],
+            "brand": "palace",
+            "description": "La veste palace est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+            "size": [
+                "XS",
+                "S",
+                "XL"
+            ],
+            "price": 528,
+            "category": "veste",
+            "colors": [
+                {
+                    "name": "noir",
+                    "bgClass": "bg-black"
+                }
+            ],
+            "reduction": 0
+        },
+        {
+            "id": 48,
+            "name": "PALACE VESTE GORE-TEX R-TEK VERT",
+            "images": [
+                "/veste/48A.webp",
+                "/veste/48B.webp",
+                "/veste/48C.webp",
+                "/veste/48D.webp"
+            ],
+            "brand": "palace",
+            "description": "La veste palace est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+            "size": [
+                "XS",
+                "S",
+                "XL"
+            ],
+            "price": 528,
+            "category": "veste",
+            "colors": [
+                {
+                    "name": "vert",
+                    "bgClass": "bg-green-500"
+                }
+            ],
+            "reduction": 0
+        },
+        {
+            "id": 49,
+            "name": "PALACE VESTE BASIC BLANC",
+            "images": [
+                "/veste/49A.webp",
+                "/veste/49B.webp",
+                "/veste/49C.webp",
+                "/veste/49D.webp"
+            ],
+            "brand": "palace",
+            "description": "La veste palace est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+            "size": [
+                "XS",
+                "S",
+                "XL"
+            ],
+            "price": 218,
+            "category": "veste",
+            "colors": [
+                {
+                    "name": "blanc",
+                    "bgClass": "bg-white"
+                }
+            ],
+            "reduction": 0
+        },
+        {
+            "id": 50,
+            "name": "STUSSY VESTE GORE-TEX BLANCHE",
+            "images": [
+                "/veste/50A.webp",
+                "/veste/50B.webp",
+                "/veste/50C.webp",
+                "/veste/50D.webp"
+            ],
+            "brand": "stussy",
+            "description": "La veste stussy est fabriqué en coton selon une coupe classique pour t'offrir un confort absolu dès le premier enfilage.",
+            "size": [
+                "XS",
+                "S",
+                "XL"
+            ],
+            "price": 550,
+            "category": "veste",
+            "colors": [
+                {
+                    "name": "blanc",
+                    "bgClass": "bg-white"
+                }
+            ],
+            "reduction": 0
+        }]
+        let DataFilter = Data;
+
+        function Up(form) {
+            const dataSize = document.querySelectorAll('input[name="size[]"]')
+            console.log(dataSize);
+            dataSize.forEach(element => {
+                SizeFilter.push(element.value)
+            });
+            const dataColor = document.querySelectorAll('input[name="color[]"]')
+            dataColor.forEach(element => {
+                ColorFilter.push(element.value)
+            })
+            console.log(SizeFilter, ColorFilter);
+            Filter()
+        }
+
+        function Filter() {
+            DataFilter = Data;
+            if (SizeFilter.length != 0) {
+                DataFilter.filter(element => element.some(value => SizeFilter.includes(value)))
+            }
+            if (ColorFilter.length != 0) {
+                DataFilter.filter(element => element.some(value => ColorFilter.includes(value)))
+            }
+            console.log(DataFilter);
+        }
+    </script>
+</body>
+
+</html>

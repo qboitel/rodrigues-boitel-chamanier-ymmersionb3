@@ -301,7 +301,7 @@
         "colors": [
             {
                 "name": "blanc",
-                "bgClass": "bg-white" 
+                "bgClass": "bg-white"
             },
             {
                 "name": "noir",
@@ -478,7 +478,7 @@
         "colors": [
             {
                 "name": "blanc",
-                "bgClass": "bg-white" 
+                "bgClass": "bg-white"
             },
             {
                 "name": "noir",

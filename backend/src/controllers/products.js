@@ -1,7 +1,7 @@
-const { readFile, access, unlink, rename, writeFile, constants } = require('fs')
-const { Product, checkDataProduct } = require('./../modeles/product')
+const { readFile, access, unlink, rename, writeFile, constants } = require('fs');
+const { Product, checkDataProduct, changeColorToObj } = require('./../modeles/product');
 
-const multer = require('multer')
+const multer = require('multer');
 
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
@@ -10,7 +10,7 @@ const storage = multer.diskStorage({
     filename: function (req, file, cb) {
         cb(null, file.originalname);
     }
-})
+});
 
 const upload = multer({ storage: storage });
 
@@ -77,7 +77,7 @@ function getProdutcsBySearch(req, res) {
 
 function addProduct(req, res) {
     console.log('addProduct');
-
+    console.log(req.body);
     //Vérification des données produit avant ajout
     if (!checkDataProduct(req.body) || req.files.length == 0) {
         req.files.forEach(file => {
@@ -104,11 +104,10 @@ function addProduct(req, res) {
         size: req.body.size.map(value => value.toUpperCase()),
         price: parseFloat(req.body.price),
         category: String(req.body.category).toLowerCase(),
-        color: req.body.color.map(value => value.toLowerCase()),
+        color: changeColorToObj(req.body.color),
         reduction: parseInt(req.body.reduction)
     });
-
-
+    console.log(newProduct);
 
     let dataShop
     readFile(dataFile, 'utf-8', (err, data) => {
@@ -142,7 +141,7 @@ function addProduct(req, res) {
                 res.status(500).json({ code: 500, message: `Oupsss une erreur dans l'écriture du fichier` });
                 return;
             }
-            res.json(dataShop);
+            res.status(200);
         });
     });
 
