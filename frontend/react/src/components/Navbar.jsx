@@ -20,37 +20,37 @@ export default function Navbar() {
                                 <div className="hidden lg:ml-6 lg:flex lg:space-x-8">
                                     <a
                                         href="/"
-                                        className="inline-flex items-center border-b-2 border-red-500 px-1 pt-1 text-sm font-medium text-gray-900"
+                                        className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium hover:border-gray-300 hover:text-gray-700"
                                     >
                                         Accueil
                                     </a>
                                     <a
                                         href="/t-shirts"
-                                        className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                                        className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium hover:border-gray-300 hover:text-gray-700"
                                     >
                                         T-Shirts
                                     </a>
                                     <a
                                         href="/pulls"
-                                        className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                                        className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium hover:border-gray-300 hover:text-gray-700"
                                     >
                                         Pulls
                                     </a>
                                     <a
                                         href="/pantalons"
-                                        className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                                        className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium hover:border-gray-300 hover:text-gray-700"
                                     >
                                         Pantalons
                                     </a>
                                     <a
                                         href="/shorts"
-                                        className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                                        className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium hover:border-gray-300 hover:text-gray-700"
                                     >
                                         Shorts
                                     </a>
                                     <a
                                         href="/vestes"
-                                        className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                                        className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium hover:border-gray-300 hover:text-gray-700"
                                     >
                                         Vestes
                                     </a>
@@ -68,7 +68,7 @@ export default function Navbar() {
                                         <input
                                             id="search"
                                             name="search"
-                                            className="block w-full rounded-lg border-0 bg-white py-1.5 pl-10 pr-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-red-600 sm:text-sm sm:leading-6"
+                                            className="block w-full rounded-lg border-0 bg-white py-1.5 pl-10 pr-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-red-600 sm:text-sm sm:leading-6"
                                             placeholder="Search"
                                             type="search"
                                         />
@@ -90,7 +90,7 @@ export default function Navbar() {
                             <div className="hidden lg:ml-4 lg:flex lg:items-center">
                                 <a
                                     href="/panier"
-                                    className="relative flex flex-shrink-0 rounded-full bg-white p-1 text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
+                                    className="relative flex flex-shrink-0 rounded-full bg-white p-1 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-2"
                                 >
                                     <span className="absolute -inset-1.5" />
                                     <span className="sr-only">View basket</span>
