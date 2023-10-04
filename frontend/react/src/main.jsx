@@ -10,6 +10,8 @@ import Pulls from "./components/Pulls.jsx";
 import Pantalons from "./components/Pantalons.jsx";
 import Short from "./components/Shorts.jsx";
 import Vestes from "./components/Vestes.jsx";
+import Panier from "./components/Panier.jsx";
+import Search from "./components/Search.jsx";
 
 const router = createBrowserRouter([
     { path: "/", element: <Root />, errorElement: ErrorPage,
@@ -44,11 +46,11 @@ const router = createBrowserRouter([
             },
             {
                 path: "panier",
-                element: <h1>Panier</h1>,
+                element: <Panier />,
             },
             {
                 path: "search",
-                element: <h1>Search</h1>,
+                element: <Search />,
             }
         ],
     },
