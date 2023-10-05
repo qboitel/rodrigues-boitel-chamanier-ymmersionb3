@@ -13,7 +13,7 @@
 
 ## Installation :
 - Clonez le projet dans votre espace
-- Accédez à la boutique en cliquant sur [ce lien.](http://localhost:5173/)
+- Accédez à la boutique en cliquant sur [ce lien](http://localhost:5173/)
 
 ### Partie back : 
 - Tapez la commande "npm i" dans un terminal pour installer les dépendances
