@@ -1,7 +1,13 @@
 import {useState} from "react";
+import {RadioGroup} from "@headlessui/react";
+
+function classNames(...classes) {
+    return classes.filter(Boolean).join(' ')
+}
 
 export default function Livraison() {
     const [addresses, setAddresses] = useState([]);
+    const [selected, setSelected] = useState(null);
 
     async function checkAddress() {
         // get input value
@@ -21,6 +27,19 @@ export default function Livraison() {
                 setAddresses(data.features);
             })
             .catch(error => console.log(error))
+    }
+
+    const handleChange = (value) => {
+        setSelected(value)
+
+        // get address
+        let address = addresses.find(address => address.properties.id === value);
+        // set address
+        localStorage.setItem('address', JSON.stringify(address));
+        // delete panier
+        localStorage.removeItem('panier');
+        // redirect to paiement
+        window.location.href = "/panier";
     }
     return (
         <div>
@@ -73,16 +92,43 @@ export default function Livraison() {
             </div>
             { /* boucle sur les adresses */ }
             <div className="grid grid-cols-4 gap-6">
-                {addresses ? addresses.map((address) => {
-                    return (
-                        <div className="col-span-4" key={address.properties.id}>
-                            <div className="flex items-center">
-                                <input id={address.properties.id} name="address" type="radio" className="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300 rounded" />
-                                <label htmlFor={address.properties.id} className="ml-3 text-sm text-gray-600 capitalize">{address.properties.label}</label>
-                            </div>
-                        </div>
-                    )
-                }) : null}
+                <RadioGroup value={selected} onChange={handleChange}>
+                    <RadioGroup.Label className="sr-only">Adresse</RadioGroup.Label>
+                    <div className="space-y-4">
+                        {addresses ? addresses.map((address) => (
+                            <RadioGroup.Option
+                                key={address.properties.id}
+                                value={address.properties.id}
+                                className={({ active }) =>
+                                    classNames(
+                                        active ? 'border-red-600 ring-2 ring-red-600' : 'border-gray-300',
+                                        'relative block cursor-pointer rounded-lg border bg-white px-6 py-4 shadow-sm focus:outline-none sm:flex sm:justify-between'
+                                    )
+                                }
+                            >
+                                {({ active, checked }) => (
+                                    <>
+                                        <span className="flex items-center">
+                                            <span className="flex flex-col text-sm">
+                                                <RadioGroup.Label as="span" className="font-medium text-gray-900">
+                                                    {address.properties.label}
+                                                </RadioGroup.Label>
+                                            </span>
+                                        </span>
+                                        <span
+                                            className={classNames(
+                                                active ? 'border' : 'border-2',
+                                                checked ? 'border-red-600' : 'border-transparent',
+                                                'pointer-events-none absolute -inset-px rounded-lg'
+                                            )}
+                                            aria-hidden="true"
+                                        />
+                                    </>
+                                )}
+                            </RadioGroup.Option>
+                        )) : null}
+                    </div>
+                </RadioGroup>
             </div>
         </div>
     )
