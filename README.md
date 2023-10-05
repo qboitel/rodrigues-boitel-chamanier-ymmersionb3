@@ -13,7 +13,7 @@
 
 ## Installation :
 - Clonez le projet dans votre espace
-- For more details, see the [SET TRANSACTION ISOLATION LEVEL](/sql/t-sql/statements/set-transaction-isolation-level-transact-sql) reference.
+- Accédez à la boutique en cliquant sur [ce lien.](/sql/t-sql/statements/set-transaction-isolation-level-transact-sql)
 
 ### Partie back : 
 - Tapez la commande "npm i" dans un terminal pour installer les dépendances
