@@ -25,5 +25,5 @@
 
 ## Auteurs :
 - Cyril Rodrigues
-- Quentin Boiteel
+- Quentin Boitel
 - Enzo Chamanier
