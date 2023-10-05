@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 export default function Product({product}) {
     return (
-        <div key={product.id} className="group relative border border-gray-200 rounded-xl">
+        <div key={product.id} className="group relative border border-gray-200 rounded-xl h-fit">
             <div className="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-t-xl bg-white lg:aspect-none group-hover:opacity-75 lg:h-80">
                 <img
                     src={"http://localhost:6969/asset" + product.images[0]}

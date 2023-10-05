@@ -4,6 +4,7 @@ import Product from "./Product.jsx";
 
 const AllSize = ["XS", "S", "M", "L", "XL", "XXL", "XXXL"]
 const AllColor = ["rouge", "vert", "bleu", "noir", "blanc", "jaune", "rose"]
+const AllSort = ["Prix croissant", "Prix décroissant"]
 
 export default function TShirts() {
     // get tshirt data from api
@@ -14,8 +15,8 @@ export default function TShirts() {
         async function fetchData() {
             await axios.get('http://localhost:6969/api/products/categorie/t-shirts')
                 .then(response => {
-                    setTshirts(response.data);
-                    setFilteredProduits(response.data);
+                    setTshirts((response.data).sort((a, b) => a.price - b.price));
+                    setFilteredProduits((response.data).sort((a, b) => a.price - b.price));
                 })
                 .catch(error => {
                     console.log(error)
@@ -40,6 +41,11 @@ export default function TShirts() {
             colors.push(color.id);
         });
         setColors(colors);
+
+        const sort = document.getElementById('price').value;
+        if (sort === "Prix décroissant") {
+            setFilteredProduits(filteredProduits.sort((a, b) => b.price - a.price));
+        }
     }
 
     // filter for each tshirt by color name
@@ -112,6 +118,21 @@ export default function TShirts() {
                                         </div>
                                     ))}
                                 </div>
+                            </div>
+                            <div>
+                                <label htmlFor="location" className="block text-sm font-medium leading-6 text-gray-900">
+                                    Trier par
+                                </label>
+                                <select
+                                    id="price"
+                                    name="price"
+                                    className="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                    defaultValue={AllSort[0]}
+                                >
+                                    {AllSort.map((sort) => (
+                                        <option key={sort} value={sort}>{sort}</option>
+                                    ))}
+                                </select>
                             </div>
                         </form>
                     </div>
