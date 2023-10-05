@@ -11,7 +11,7 @@ function getAddress(req, res) {
     let codePost = req.query.postcode;
     let searchQuery = req.query.q;
 
-    if (!(searchQuery || codePost)) {
+    if (!(searchQuery || codePost || searchQuery.length < 3)) {
         res.status(400).json({ code: 400, message: "Impossible d'exécuter cette demande, adresse ou bien code postal manquant" })
         return;
     } else {
@@ -21,7 +21,6 @@ function getAddress(req, res) {
     }
 
     let data = '';
-
     const requestAddress = http.get(urlApi + "&limit=5", response => {
 
         response.setEncoding('utf-8');
