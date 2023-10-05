@@ -10,7 +10,11 @@ export default function Panier() {
     function totalPanier() {
         let total = 0;
         panier.forEach((item) => {
-            total += item.product.price * item.quantity;
+            if (item.product.reduction) {
+                total += item.product.price * (1 - (item.product.reduction / 100)) * item.quantity;
+            } else {
+                total += item.product.price * item.quantity;
+            }
         });
         return total;
     }
@@ -45,9 +49,15 @@ export default function Panier() {
                                                         {item.product.name}
                                                     </a>
                                                 </h4>
-                                                <p className="ml-4 text-sm font-medium text-gray-900">{item.product.price}€</p>
+                                                {item.product.reduction ?
+                                                    <p className="mt-1 text-sm text-gray-500 line-clamp-1">
+                                                        <span className="line-through">{item.product.price}€</span>
+                                                        {' '}
+                                                        <span className="text-red-600 font-bold ml-2">{item.product.price * (1 - (item.product.reduction/100))}€</span>
+                                                    </p>
+                                                    : <p className="mt-1 text-sm text-gray-900 line-clamp-1">{item.product.price}€</p>}
                                             </div>
-                                            <p className="mt-1 text-sm text-gray-500">{item.selectedColor}</p>
+                                            <p className="mt-1 text-sm text-gray-500">{item.selectedColor.name}</p>
                                             <p className="mt-1 text-sm text-gray-500">{item.selectedSize}</p>
                                             <p className="mt-1 text-sm text-gray-500">Quantité : {item.quantity}</p>
                                         </div>

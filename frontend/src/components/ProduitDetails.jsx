@@ -47,6 +47,10 @@ export default function ProduitDetails() {
     // for product color and size, we only take the selected one
     function addToPanier() {
         let found = false;
+        if (selectedColor === undefined || selectedSize === undefined) {
+            alert("Veuillez sélectionner une couleur et une taille");
+            return;
+        }
         for (let i = 0; i < panier.length; i++) {
             if (panier[i].product.id === product.id && panier[i].selectedColor === selectedColor && panier[i].selectedSize === selectedSize) {
                 panier[i].quantity += 1;
@@ -58,6 +62,7 @@ export default function ProduitDetails() {
             panier.push({product: product, quantity: 1, selectedColor: selectedColor, selectedSize: selectedSize});
         }
         localStorage.setItem("panier", JSON.stringify(panier));
+        alert("Produit ajouté au panier avec succès !");
     }
 
     return (
@@ -113,7 +118,13 @@ export default function ProduitDetails() {
 
                         <div className="mt-3">
                             <h2 className="sr-only">Product information</h2>
-                            <p className="text-3xl tracking-tight text-gray-900">{product.price}€</p>
+                            {product.reduction ?
+                                <p className="mt-1 text-sm text-gray-500 line-clamp-1">
+                                    <span className="text-3xl tracking-tight text-gray-500 line-through">{product.price}€</span>
+                                    {' '}
+                                    <span className="text-red-600 font-bold ml-2 text-3xl">{product.price * (1 - (product.reduction/100))}€</span>
+                                </p>
+                                : <p className="text-3xl tracking-tight text-gray-900">{product.price}€</p>}
                         </div>
 
                         <div className="mt-6">
@@ -136,7 +147,7 @@ export default function ProduitDetails() {
                                     {product.colors.map((color) => (
                                         <RadioGroup.Option
                                             key={"color"+color.name}
-                                            value={color.name}
+                                            value={color}
                                             className={({ active, checked }) =>
                                                 classNames(
                                                     color.bgClass,
