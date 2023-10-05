@@ -86,11 +86,11 @@ export default function Panier() {
                             </a>
                         </div>
 
-                        <div className="mt-6 text-center text-sm">
+                        {panier.length > 0 ? <div className="mt-6 text-center text-sm">
                             <button type="submit" onClick={removeFromPanier} className="text-sm font-medium text-red-600 hover:text-red-500">
                                 <span>Supprimer le panier</span>
                             </button>
-                        </div>
+                        </div> : null}
                     </section>
                 </form>
             </div>

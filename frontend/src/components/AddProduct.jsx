@@ -3,10 +3,30 @@ const AllSize = ["XS", "S", "M", "L", "XL", "XXL", "XXXL"]
 const AllColor = ["rouge", "vert", "bleu", "noir", "blanc", "jaune", "rose"]
 
 export default function AddProduct() {
+
+    async function sendForm(e) {
+        e.preventDefault();
+        let form = document.getElementById("form");
+        let formData = new FormData(form);
+        await fetch("http://localhost:6969/api/products/add", {
+            method: 'POST',
+            body: formData
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.error) {
+                    alert(data.error);
+                } else {
+                    alert("Produit ajouté avec succès !");
+                    form.reset();
+                }
+            })
+            .catch(error => console.log(error))
+    }
     return (
         <div className="container mx-auto py-4 px-2 sm:px-4 lg:px-8">
             <h1 className="text-3xl font-bold">Ajouter un produit</h1>
-            <form action="http://localhost:6969/api/products/add" method="post" encType="multipart/form-data" id="form" className="mt-4 grid grid-cols-2 gap-6">
+            <form onSubmit={sendForm} method="post" encType="multipart/form-data" id="form" className="mt-4 grid grid-cols-2 gap-6">
                 <div className="grid grid-rows-2 space-y-2">
                     <div className="flex flex-col">
                         <label htmlFor="name">Nom du produit</label>
