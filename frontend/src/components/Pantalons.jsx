@@ -4,18 +4,18 @@ import Product from "./Product.jsx";
 
 const AllSize = ["XS", "S", "M", "L", "XL", "XXL", "XXXL"]
 const AllColor = ["rouge", "vert", "bleu", "noir", "blanc", "jaune", "rose"]
-const AllSort = ["Prix croissant", "Prix décroissant"]
 
 export default function Pantalons() {
     const [pantalons, setPantalons] = useState([]);
     const [filteredProduits, setFilteredProduits] = useState([]);
+    const [sortState, setSortState] = useState("none");
 
     useEffect(() => {
         async function fetchData() {
             await axios.get('http://localhost:6969/api/products/categorie/pantalon')
                 .then(response => {
-                    setPantalons((response.data).sort((a, b) => a.price - b.price));
-                    setFilteredProduits((response.data).sort((a, b) => a.price - b.price));
+                    setPantalons(response.data);
+                    setFilteredProduits(response.data);
                 })
                 .catch(error => {
                     console.log(error)
@@ -23,6 +23,12 @@ export default function Pantalons() {
         }
         fetchData();
     }, []);
+
+    const sortMethods = {
+        none: { method: () => null },
+        ascending: { method: (a, b) => a.price - b.price },
+        descending: { method: (a, b) => b.price - a.price },
+    };
 
     const [colors, setColors] = useState([]);
     const [sizes, setSizes] = useState([]);
@@ -46,46 +52,42 @@ export default function Pantalons() {
     useEffect(() => {
         // set tshirts to filter
         function filter() {
-            let filteredProduits = [];
-            if (colors.length === 0 && sizes.length === 0) return setFilteredProduits(pantalons);
+            let a = [];
+            if (colors.length === 0 && sizes.length === 0) {
+                setFilteredProduits(pantalons);
+            }
             if (colors.length > 0) {
-                filteredProduits = pantalons.filter((produit) => {
+                a = pantalons.filter((produit) => {
                     return colors.some((color) => {
                         return produit.colors.some((produitColor) => {
                             return produitColor.name === color;
                         });
                     });
                 })
+                setFilteredProduits(a);
             }
-            setFilteredProduits(filteredProduits);
             if (sizes.length > 0 && filteredProduits.length > 0) {
-                filteredProduits = filteredProduits.filter((produit) => {
+                a = filteredProduits.filter((produit) => {
                     return sizes.some((size) => {
                         return produit.size.some((produitSize) => {
                             return produitSize === size;
                         });
                     });
                 })
+                setFilteredProduits(a);
             } else if (sizes.length > 0 && filteredProduits.length === 0) {
-                filteredProduits = pantalons.filter((produit) => {
+                a = pantalons.filter((produit) => {
                     return sizes.some((size) => {
                         return produit.size.some((produitSize) => {
                             return produitSize === size;
                         });
                     });
                 })
-            }
-            setFilteredProduits(filteredProduits);
-
-            const sort = document.getElementById('price').value;
-            if (sort === "Prix croissant") {
-                setFilteredProduits(filteredProduits.sort((a, b) => a.price - b.price));
-            } else if (sort === "Prix décroissant") {
-                setFilteredProduits(filteredProduits.sort((a, b) => b.price - a.price));
+                setFilteredProduits(a);
             }
         }
         filter();
-    }, [colors, sizes]);
+    }, [colors, pantalons, sizes]);
     return (
         <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8 py-4">
             <h1 className="text-5xl font-bold mt-4 mb-8">Pantalons</h1>
@@ -127,18 +129,19 @@ export default function Pantalons() {
                                     id="price"
                                     name="price"
                                     className="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                                    defaultValue={AllSort[0]}
+                                    defaultValue={'DEFAULT'}
+                                    onChange={(e) => setSortState(e.target.value)}
                                 >
-                                    {AllSort.map((sort) => (
-                                        <option key={sort} value={sort}>{sort}</option>
-                                    ))}
+                                    <option value="DEFAULT" disabled>Pertinence</option>
+                                    <option value="ascending">Prix croissant</option>
+                                    <option value="descending">Prix décroissant</option>
                                 </select>
                             </div>
                         </form>
                     </div>
                 </div>
                 <div className="grid grid-cols-2 gap-10 col-span-3">
-                    {filteredProduits.map((produit) => (<Product product={produit} key={produit.id} />))}
+                    {filteredProduits.sort(sortMethods[sortState].method).map((produit) => (<Product product={produit} key={produit.id} />))}
                 </div>
             </div>
         </div>
