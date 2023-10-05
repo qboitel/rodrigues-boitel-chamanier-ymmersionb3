@@ -41,11 +41,6 @@ export default function TShirts() {
             colors.push(color.id);
         });
         setColors(colors);
-
-        const sort = document.getElementById('price').value;
-        if (sort === "Prix décroissant") {
-            setFilteredProduits(filteredProduits.sort((a, b) => b.price - a.price));
-        }
     }
 
     // filter for each tshirt by color name
@@ -82,6 +77,13 @@ export default function TShirts() {
                 })
             }
             setFilteredProduits(filteredProduits);
+
+            const sort = document.getElementById('price').value;
+            if (sort === "Prix croissant") {
+                setFilteredProduits(filteredProduits.sort((a, b) => a.price - b.price));
+            } else if (sort === "Prix décroissant") {
+                setFilteredProduits(filteredProduits.sort((a, b) => b.price - a.price));
+            }
         }
         filter();
     }, [colors, sizes]);
