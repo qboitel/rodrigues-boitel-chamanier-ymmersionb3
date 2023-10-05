@@ -1,6 +1,6 @@
 # Street Wear 
 
-### Une boutique e-commerce offrant une expérience de shopping en ligne immersive grâce à ses fonctionnalités avancées. 
+### Une boutique e-commerce de street wear offrant une expérience de shopping en ligne immersive grâce à ses fonctionnalités avancées. 
 
 ## Fonctionnalités clés :
 - **Large gamme de produits :** Une sélection soignée de vêtements street wear de marques renommées.
@@ -21,9 +21,6 @@
 ### Partie front :
 - Tapez la commande "npm i" dans un terminal pour installer les dépendances
 - Lancez le serveur avec la commande "npm run dev"
-
-## Documentation : 
-[Liens vers la diapo](lien_vers_la_diapo)
 
 ## Auteurs :
 - Cyril Rodrigues
