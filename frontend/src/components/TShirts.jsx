@@ -7,7 +7,6 @@ const AllColor = ["rouge", "vert", "bleu", "noir", "blanc", "jaune", "rose"]
 const AllSort = ["Prix croissant", "Prix décroissant"]
 
 export default function TShirts() {
-    // get tshirt data from api
     const [tshirts, setTshirts] = useState([]);
     const [filteredProduits, setFilteredProduits] = useState([]);
     const [colors, setColors] = useState([]);
