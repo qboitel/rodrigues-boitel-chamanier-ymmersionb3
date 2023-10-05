@@ -10,12 +10,14 @@ export default function Navbar() {
                     <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8">
                         <div className="flex h-16 justify-between">
                             <div className="flex px-2 lg:px-0">
-                                <div className="flex flex-shrink-0 items-center">
-                                    <img
-                                        className="h-8 w-auto"
-                                        src="https://tailwindui.com/img/logos/mark.svg?color=red&shade=600"
-                                        alt="Your Company"
-                                    />
+                                <div className="flex items-center">
+                                    <a href="/">
+                                        <img
+                                            className="h-16 w-auto"
+                                            src="/1.png"
+                                            alt="Your Company"
+                                        />
+                                    </a>
                                 </div>
                                 <div className="hidden lg:ml-6 lg:flex lg:space-x-8">
                                     <a
