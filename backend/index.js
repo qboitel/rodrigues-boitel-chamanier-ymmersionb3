@@ -15,5 +15,4 @@ app.use('/asset', express.static(__dirname + '/asset/images'));
 require('./src/routes/products')(app)
 require('./src/routes/address')(app)
 
-
 app.listen(PORT, () => console.log(`Serveur en cours d'écoute sur le port ${PORT}`))

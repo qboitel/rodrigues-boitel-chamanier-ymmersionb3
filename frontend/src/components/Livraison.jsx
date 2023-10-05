@@ -1,13 +1,11 @@
 import {useState} from "react";
 
 export default function Livraison() {
-
     const [addresses, setAddresses] = useState([]);
 
     async function checkAddress() {
         // get input value
         let address = document.getElementById("address").value;
-        console.log(address);
         let postalCode = document.getElementById("postal-code").value;
 
         if (address.length < 3) return;
@@ -24,10 +22,6 @@ export default function Livraison() {
             })
             .catch(error => console.log(error))
     }
-
-    console.log(addresses);
-
-
     return (
         <div>
             <div className="mx-auto max-w-2xl px-4 pb-24 pt-16 sm:px-6 lg:max-w-7xl lg:px-8 space-y-4">
@@ -70,6 +64,7 @@ export default function Livraison() {
                                 type="text"
                                 name="postal-code"
                                 id="postal-code"
+                                onChange={checkAddress}
                                 className="mt-2 block w-full rounded-lg border-0 bg-white py-1.5 px-3 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-red-600 sm:text-sm sm:leading-6"
                             />
                         </div>
@@ -78,7 +73,7 @@ export default function Livraison() {
             </div>
             { /* boucle sur les adresses */ }
             <div className="grid grid-cols-4 gap-6">
-                {addresses.map((address) => {
+                {addresses ? addresses.map((address) => {
                     return (
                         <div className="col-span-4" key={address.properties.id}>
                             <div className="flex items-center">
@@ -87,7 +82,7 @@ export default function Livraison() {
                             </div>
                         </div>
                     )
-                })}
+                }) : null}
             </div>
         </div>
     )
