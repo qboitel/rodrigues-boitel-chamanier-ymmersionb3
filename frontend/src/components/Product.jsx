@@ -17,7 +17,13 @@ export default function Product({product}) {
                             {product.name}
                         </a>
                     </h3>
-                    <p className="mt-1 text-sm font-medium text-gray-900">{product.price}€</p>
+                    {product.reduction ?
+                        <p className="mt-1 text-sm text-gray-500 line-clamp-1">
+                            <span className="line-through">{product.price}€</span>
+                            {' '}
+                            <span className="text-red-600 font-bold ml-2">{product.price * (1 - (product.reduction/100))}€</span>
+                        </p>
+                    : <p className="mt-1 text-sm text-gray-900 line-clamp-1">{product.price}€</p>}
                 </div>
             </div>
         </div>

@@ -10,6 +10,8 @@ export default function TShirts() {
     // get tshirt data from api
     const [tshirts, setTshirts] = useState([]);
     const [filteredProduits, setFilteredProduits] = useState([]);
+    const [colors, setColors] = useState([]);
+    const [sizes, setSizes] = useState([]);
 
     useEffect(() => {
         async function fetchData() {
@@ -25,8 +27,6 @@ export default function TShirts() {
         fetchData();
     }, []);
 
-    const [colors, setColors] = useState([]);
-    const [sizes, setSizes] = useState([]);
     const handleChange = () => {
         const size = document.querySelectorAll('input[name="size"]:checked');
         let sizes = [];
@@ -122,12 +122,12 @@ export default function TShirts() {
                                 </div>
                             </div>
                             <div>
-                                <label htmlFor="location" className="block text-sm font-medium leading-6 text-gray-900">
+                                <label htmlFor="sort" className="block text-sm font-medium leading-6 text-gray-900">
                                     Trier par
                                 </label>
                                 <select
-                                    id="price"
-                                    name="price"
+                                    id="sort"
+                                    name="sort"
                                     className="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
                                     defaultValue={AllSort[0]}
                                 >
