@@ -3,9 +3,11 @@
 ### Une boutique e-commerce de street wear offrant une expérience de shopping en ligne immersive grâce à ses fonctionnalités avancées. 
 
 ## Fonctionnalités clés :
-- **Large gamme de produits :** Une sélection soignée de vêtements street wear de marques renommées.
-- **Recherche avancée :** Un moteur de recherche puissant pour trouver rapidement des produits spécifiques.
-- **Gestion du panier d'achat :** Permet aux utilisateurs de supprimer leur panier et de finaliser leurs achats.
+| Fonctionnalité | Description |
+|-----:|-----------|
+|**Large gamme de produits** | Une sélection soignée de vêtements street wear de marques renommées |
+|**Recherche avancée**| Un moteur de recherche puissant pour trouver rapidement des produits spécifiques |
+|**Gestion du panier d'achat**| Permet aux utilisateurs de supprimer leur panier et de finaliser leurs achats|
 
 ## Technologies Utilisées :
 - **Front-end:** HTML, CSS, React.js
