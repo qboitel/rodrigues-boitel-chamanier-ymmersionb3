@@ -1,5 +1,6 @@
 /* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
+/** @type {DefaultColors} */
 // get the default colors from tailwindcss default config file
 const colors = require('tailwindcss/colors')
 export default {

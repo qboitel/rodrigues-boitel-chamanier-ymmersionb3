@@ -2,8 +2,6 @@ export default function Panier() {
     // retrieve products from localstorage
     let panier = (JSON.parse(localStorage.getItem("panier"))) || [];
 
-    console.log(panier)
-
     function removeFromPanier() {
         localStorage.removeItem("panier");
         window.location.reload();
@@ -80,19 +78,19 @@ export default function Panier() {
                         </div>
 
                         <div className="mt-10">
-                            <button
-                                type="submit"
+                            <a
+                                href={"/livraison"}
                                 className="w-full rounded-md border border-transparent bg-red-600 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50"
                             >
                                 Payer
-                            </button>
+                            </a>
                         </div>
 
-                        <div className="mt-6 text-center text-sm">
+                        {panier.length > 0 ? <div className="mt-6 text-center text-sm">
                             <button type="submit" onClick={removeFromPanier} className="text-sm font-medium text-red-600 hover:text-red-500">
                                 <span>Supprimer le panier</span>
                             </button>
-                        </div>
+                        </div> : null}
                     </section>
                 </form>
             </div>

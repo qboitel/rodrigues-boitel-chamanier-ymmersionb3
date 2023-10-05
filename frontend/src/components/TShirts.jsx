@@ -4,17 +4,19 @@ import Product from "./Product.jsx";
 
 const AllSize = ["XS", "S", "M", "L", "XL", "XXL", "XXXL"]
 const AllColor = ["rouge", "vert", "bleu", "noir", "blanc", "jaune", "rose"]
+const AllSort = ["Prix croissant", "Prix décroissant"]
 
-export default function Shorts() {
-    const [shorts, setShorts] = useState([]);
+export default function TShirts() {
+    // get tshirt data from api
+    const [tshirts, setTshirts] = useState([]);
     const [filteredProduits, setFilteredProduits] = useState([]);
 
     useEffect(() => {
         async function fetchData() {
-            await axios.get('http://localhost:6969/api/products/categorie/short')
+            await axios.get('http://localhost:6969/api/products/categorie/t-shirts')
                 .then(response => {
-                    setShorts(response.data);
-                    setFilteredProduits(response.data);
+                    setTshirts((response.data).sort((a, b) => a.price - b.price));
+                    setFilteredProduits((response.data).sort((a, b) => a.price - b.price));
                 })
                 .catch(error => {
                     console.log(error)
@@ -45,11 +47,10 @@ export default function Shorts() {
     useEffect(() => {
         // set tshirts to filter
         function filter() {
-            let filteredProduits = null;
-            // return only tshirts with colors selected inversed
-            if (colors.length === 0 && sizes.length === 0) return setFilteredProduits(shorts);
+            let filteredProduits = [];
+            if (colors.length === 0 && sizes.length === 0) return setFilteredProduits(tshirts);
             if (colors.length > 0) {
-                filteredProduits = shorts.filter((produit) => {
+                filteredProduits = tshirts.filter((produit) => {
                     return colors.some((color) => {
                         return produit.colors.some((produitColor) => {
                             return produitColor.name === color;
@@ -57,8 +58,17 @@ export default function Shorts() {
                     });
                 })
             }
-            if (sizes.length > 0) {
+            setFilteredProduits(filteredProduits);
+            if (sizes.length > 0 && filteredProduits.length > 0) {
                 filteredProduits = filteredProduits.filter((produit) => {
+                    return sizes.some((size) => {
+                        return produit.size.some((produitSize) => {
+                            return produitSize === size;
+                        });
+                    });
+                })
+            } else if (sizes.length > 0 && filteredProduits.length === 0) {
+                filteredProduits = tshirts.filter((produit) => {
                     return sizes.some((size) => {
                         return produit.size.some((produitSize) => {
                             return produitSize === size;
@@ -67,12 +77,20 @@ export default function Shorts() {
                 })
             }
             setFilteredProduits(filteredProduits);
+
+            const sort = document.getElementById('price').value;
+            if (sort === "Prix croissant") {
+                setFilteredProduits(filteredProduits.sort((a, b) => a.price - b.price));
+            } else if (sort === "Prix décroissant") {
+                setFilteredProduits(filteredProduits.sort((a, b) => b.price - a.price));
+            }
         }
         filter();
     }, [colors, sizes]);
+
     return (
         <div className="mx-auto max-w-7xl px-2 sm:px-4 lg:px-8 py-4">
-            <h1 className="text-5xl font-bold mt-4 mb-8">Shorts</h1>
+            <h1 className="text-5xl font-bold mt-4 mb-8">T-Shirts</h1>
             <div className="grid grid-cols-4 gap-10">
                 <div className="col-span-1">
                     {/* Filters */}
@@ -102,6 +120,21 @@ export default function Shorts() {
                                         </div>
                                     ))}
                                 </div>
+                            </div>
+                            <div>
+                                <label htmlFor="location" className="block text-sm font-medium leading-6 text-gray-900">
+                                    Trier par
+                                </label>
+                                <select
+                                    id="price"
+                                    name="price"
+                                    className="mt-2 block w-full rounded-md border-0 py-1.5 pl-3 pr-10 text-gray-900 ring-1 ring-inset ring-gray-300 focus:ring-2 focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                                    defaultValue={AllSort[0]}
+                                >
+                                    {AllSort.map((sort) => (
+                                        <option key={sort} value={sort}>{sort}</option>
+                                    ))}
+                                </select>
                             </div>
                         </form>
                     </div>

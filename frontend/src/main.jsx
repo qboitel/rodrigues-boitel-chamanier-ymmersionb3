@@ -13,6 +13,7 @@ import Vestes from "./components/Vestes.jsx";
 import Panier from "./components/Panier.jsx";
 import Search from "./components/Search.jsx";
 import AddProduct from "./components/AddProduct.jsx";
+import Livraison from "./components/Livraison.jsx";
 
 const router = createBrowserRouter([
     { path: "/", element: <Root />, errorElement: ErrorPage,
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
             {
                 path: "ajout-produit",
                 element: <AddProduct />,
+            },
+            {
+                path: "/livraison",
+                element: <Livraison />,
             }
         ],
     },
