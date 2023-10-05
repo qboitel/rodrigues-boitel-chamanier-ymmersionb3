@@ -1,5 +1,5 @@
-# Street Wear 
-<img src="https://tailwindui.com/img/logos/mark.svg?color=red&shade=600"  style="text-align:center" width="200" height="200" />
+# Street Wear | <img src="https://tailwindui.com/img/logos/mark.svg?color=red&shade=600"  style="text-align:center" width="200" height="200" />
+
 ### Une boutique e-commerce de street wear offrant une expérience de shopping en ligne immersive grâce à ses fonctionnalités avancées. 
 
 ## Fonctionnalités clés :
