@@ -47,6 +47,10 @@ export default function ProduitDetails() {
     // for product color and size, we only take the selected one
     function addToPanier() {
         let found = false;
+        if (selectedColor === undefined || selectedSize === undefined) {
+            alert("Veuillez sélectionner une couleur et une taille");
+            return;
+        }
         for (let i = 0; i < panier.length; i++) {
             if (panier[i].product.id === product.id && panier[i].selectedColor === selectedColor && panier[i].selectedSize === selectedSize) {
                 panier[i].quantity += 1;
