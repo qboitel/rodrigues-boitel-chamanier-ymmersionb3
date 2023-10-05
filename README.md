@@ -1,4 +1,6 @@
-# Street Wear <img src="https://tailwindui.com/img/logos/mark.svg?color=red&shade=600"  style="text-align:center" width="30" height="auto" />
+<img src="doc/Black%20Beige%20Bold%20Modern%20Framed%20Numerical%20Product%20Brand%20Logo/1.png"  style="text-align:center" width="150" height="auto" />
+
+# StreetShop
 
 ### Une boutique e-commerce de street wear offrant une expérience de shopping en ligne immersive grâce à ses fonctionnalités avancées. 
 
