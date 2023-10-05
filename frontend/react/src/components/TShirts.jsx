@@ -46,8 +46,7 @@ export default function TShirts() {
     useEffect(() => {
         // set tshirts to filter
         function filter() {
-            let filteredProduits = null;
-            // return only tshirts with colors selected inversed
+            let filteredProduits = [];
             if (colors.length === 0 && sizes.length === 0) return setFilteredProduits(tshirts);
             if (colors.length > 0) {
                 filteredProduits = tshirts.filter((produit) => {
@@ -58,8 +57,17 @@ export default function TShirts() {
                     });
                 })
             }
-            if (sizes.length > 0) {
+            setFilteredProduits(filteredProduits);
+            if (sizes.length > 0 && filteredProduits.length > 0) {
                 filteredProduits = filteredProduits.filter((produit) => {
+                    return sizes.some((size) => {
+                        return produit.size.some((produitSize) => {
+                            return produitSize === size;
+                        });
+                    });
+                })
+            } else if (sizes.length > 0 && filteredProduits.length === 0) {
+                filteredProduits = tshirts.filter((produit) => {
                     return sizes.some((size) => {
                         return produit.size.some((produitSize) => {
                             return produitSize === size;
