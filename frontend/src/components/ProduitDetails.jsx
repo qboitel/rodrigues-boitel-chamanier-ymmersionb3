@@ -1,6 +1,5 @@
 import {useEffect, useState} from 'react'
 import { RadioGroup, Tab } from '@headlessui/react'
-import { HeartIcon } from '@heroicons/react/24/outline'
 import "./../index.css"
 function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
@@ -213,14 +212,6 @@ export default function ProduitDetails() {
                                     className="flex max-w-xs flex-1 items-center justify-center rounded-md border border-transparent bg-red-600 px-8 py-3 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 focus:ring-offset-gray-50 sm:w-full"
                                 >
                                     Ajouter au panier
-                                </button>
-
-                                <button
-                                    type="button"
-                                    className="ml-4 flex items-center justify-center rounded-md px-3 py-3 text-gray-400 hover:bg-gray-100 hover:text-gray-500"
-                                >
-                                    <HeartIcon className="h-6 w-6 flex-shrink-0" aria-hidden="true" />
-                                    <span className="sr-only">Add to favorites</span>
                                 </button>
                             </div>
                         </form>
