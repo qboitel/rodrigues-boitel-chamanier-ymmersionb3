@@ -13,7 +13,7 @@ const Product = function (product) {
 
 const AllSize = ["XS", "S", "M", "L", "XL", "XXL", "XXXL"]
 
-const AllCategories = ["veste", "short", "pantalon", "pull", "t-shirts", "test"]
+const AllCategories = ["veste", "short", "pantalon", "pull", "t-shirts"]
 
 const AllColor = ["rouge", "vert", "bleu", "noir", "blanc", "jaune", "rose"]
 
