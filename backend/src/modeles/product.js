@@ -7,7 +7,7 @@ const Product = function (product) {
     this.size = product.size;
     this.price = product.price;
     this.category = product.category;
-    this.color = product.color;
+    this.colors = product.colors;
     this.reduction = product.reduction;
 }
 

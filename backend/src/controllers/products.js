@@ -104,7 +104,7 @@ function addProduct(req, res) {
         size: req.body.size.map(value => value.toUpperCase()),
         price: parseFloat(req.body.price),
         category: String(req.body.category).toLowerCase(),
-        color: changeColorToObj(req.body.color),
+        colors: changeColorToObj(req.body.color),
         reduction: parseInt(req.body.reduction)
     });
     console.log(newProduct);
